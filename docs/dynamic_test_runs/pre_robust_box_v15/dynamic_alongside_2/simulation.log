@@ -1,0 +1,450 @@
+simulation-1  | [INFO] [launch]: All log files can be found below /workspace/log/ros/2026-10-28-12-52-42-714981-f052307970f4-53
+simulation-1  | [INFO] [launch]: Default logging verbosity is set to INFO
+simulation-1  | [INFO] [gz-1]: process started with pid [103]
+simulation-1  | [INFO] [xacro-2]: process started with pid [104]
+simulation-1  | [INFO] [parameter_bridge-3]: process started with pid [105]
+simulation-1  | [INFO] [create-4]: process started with pid [106]
+simulation-1  | [INFO] [robot_state_publisher-5]: process started with pid [107]
+simulation-1  | [INFO] [component_container_isolated-6]: process started with pid [108]
+simulation-1  | [INFO] [parameter_bridge-7]: process started with pid [109]
+simulation-1  | [create-4] [INFO] [1793191964.438869800] [ros_gz_sim]: Requesting list of world names.
+simulation-1  | [robot_state_publisher-5] [INFO] [1793191964.507980973] [robot_state_publisher]: Robot initialized
+simulation-1  | [component_container_isolated-6] [INFO] [1793191964.598432138] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libcontroller_server_core.so
+simulation-1  | [component_container_isolated-6] [INFO] [1793191964.633736111] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191964.633783746] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191964.651465647] [controller_server]: 
+simulation-1  | [component_container_isolated-6] 	controller_server lifecycle node launched. 
+simulation-1  | [component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+simulation-1  | [component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+simulation-1  | [INFO] [xacro-2]: process has finished cleanly [pid 104]
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.068266679] [controller_server]: Creating controller server
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.078633760] [local_costmap.local_costmap]: 
+simulation-1  | [component_container_isolated-6] 	local_costmap lifecycle node launched. 
+simulation-1  | [component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+simulation-1  | [component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.103267407] [local_costmap.local_costmap]: Creating Costmap
+simulation-1  | [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/controller_server' in container '/nav2_container'
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.112851034] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libmap_server_core.so
+simulation-1  | [create-4] [INFO] [1793191965.118005614] [ros_gz_sim]: Entity creation successful.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.155503482] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::CostmapFilterInfoServer>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.155549804] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapSaver>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.155552431] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.155554316] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.169541193] [map_server]: 
+simulation-1  | [component_container_isolated-6] 	map_server lifecycle node launched. 
+simulation-1  | [component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+simulation-1  | [component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.169592953] [map_server]: Creating
+simulation-1  | [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map_server' in container '/nav2_container'
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.177500677] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libamcl_core.so
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.184710705] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.184756104] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.196984820] [amcl]: 
+simulation-1  | [component_container_isolated-6] 	amcl lifecycle node launched. 
+simulation-1  | [component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+simulation-1  | [component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.222536647] [amcl]: Creating
+simulation-1  | [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/amcl' in container '/nav2_container'
+simulation-1  | [INFO] [create-4]: process has finished cleanly [pid 106]
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.237195181] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libsmoother_server_core.so
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.239695065] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.239737511] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.250613632] [smoother_server]: 
+simulation-1  | [component_container_isolated-6] 	smoother_server lifecycle node launched. 
+simulation-1  | [component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+simulation-1  | [component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.363812435] [smoother_server]: Creating smoother server
+simulation-1  | [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/smoother_server' in container '/nav2_container'
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.372523822] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libnav2_lifecycle_manager_core.so
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.376789295] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.376835073] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.389217123] [lifecycle_manager_localization]: Creating
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.398982036] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+simulation-1  | [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_localization' in container '/nav2_container'
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.401771962] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.401810296] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.401979546] [map_server]: Configuring
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.402024352] [map_io]: Loading yaml file: /workspace/factorynav_bringup/maps/dynamic_factory.yaml
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.404523935] [map_io]: resolution: 0.05
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.404553362] [map_io]: origin[0]: -11
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.404556892] [map_io]: origin[1]: -8.5
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.404558662] [map_io]: origin[2]: 0
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.404560771] [map_io]: free_thresh: 0.196
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.404562523] [map_io]: occupied_thresh: 0.65
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.404565261] [map_io]: mode: trinary
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.404567586] [map_io]: negate: 0
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.405022838] [map_io]: Loading image_file: /workspace/factorynav_bringup/maps/dynamic_factory.pgm
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.411159027] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libplanner_server_core.so
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.411805314] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.411837768] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.412387189] [map_io]: Read map /workspace/factorynav_bringup/maps/dynamic_factory.pgm: 440 X 340 map @ 0.05 m/cell
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.420935562] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.421085610] [amcl]: Configuring
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.421139898] [amcl]: initTransforms
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.431691705] [planner_server]: 
+simulation-1  | [component_container_isolated-6] 	planner_server lifecycle node launched. 
+simulation-1  | [component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+simulation-1  | [component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.434980605] [amcl]: initPubSub
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.440174733] [amcl]: Subscribed to map topic.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.448124759] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.448254329] [map_server]: Activating
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.448498008] [map_server]: Creating bond (map_server) to lifecycle manager.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.448565313] [amcl]: Received a 440 X 340 map @ 0.050 m/pix
+simulation-1  | [parameter_bridge-3] [INFO] [1793191965.464419823] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+simulation-1  | [parameter_bridge-3] [INFO] [1793191965.465755822] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/joint_states (gz.msgs.Model) -> joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+simulation-1  | [parameter_bridge-7] [INFO] [1793191965.468966813] [dynamic_bridge]: Creating GZ->ROS Bridge: [/model/turtlebot3_waffle/pose (gz.msgs.Pose_V) -> /dynamic/robot_pose (tf2_msgs/msg/TFMessage)] (Lazy 0)
+simulation-1  | [parameter_bridge-3] [INFO] [1793191965.472802709] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> odom (nav_msgs/msg/Odometry)] (Lazy 0)
+simulation-1  | [parameter_bridge-3] [INFO] [1793191965.475292450] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tf (gz.msgs.Pose_V) -> tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+simulation-1  | [parameter_bridge-7] [INFO] [1793191965.477313340] [dynamic_bridge]: Creating GZ->ROS Bridge: [/model/human_a/pose (gz.msgs.Pose_V) -> /dynamic/human_a/pose (tf2_msgs/msg/TFMessage)] (Lazy 0)
+simulation-1  | [parameter_bridge-7] [INFO] [1793191965.477904697] [dynamic_bridge]: Creating GZ->ROS Bridge: [/dynamic/human_a/contacts (gz.msgs.Contacts) -> /dynamic/human_a/contacts (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+simulation-1  | [parameter_bridge-3] [INFO] [1793191965.480150557] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/imu (gz.msgs.IMU) -> imu (sensor_msgs/msg/Imu)] (Lazy 0)
+simulation-1  | [parameter_bridge-3] [INFO] [1793191965.480708686] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+simulation-1  | [parameter_bridge-7] [INFO] [1793191965.481053438] [dynamic_bridge]: Creating ROS->GZ Bridge: [/dynamic/human_a/cmd_vel (geometry_msgs/msg/Twist) -> /model/human_a/cmd_vel (gz.msgs.Twist)] (Lazy 0)
+simulation-1  | [parameter_bridge-7] [INFO] [1793191965.482056182] [dynamic_bridge]: Creating GZ->ROS Bridge: [/model/human_b/pose (gz.msgs.Pose_V) -> /dynamic/human_b/pose (tf2_msgs/msg/TFMessage)] (Lazy 0)
+simulation-1  | [parameter_bridge-7] [INFO] [1793191965.482519944] [dynamic_bridge]: Creating GZ->ROS Bridge: [/dynamic/human_b/contacts (gz.msgs.Contacts) -> /dynamic/human_b/contacts (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+simulation-1  | [parameter_bridge-7] [INFO] [1793191965.482937094] [dynamic_bridge]: Creating ROS->GZ Bridge: [/dynamic/human_b/cmd_vel (geometry_msgs/msg/Twist) -> /model/human_b/cmd_vel (gz.msgs.Twist)] (Lazy 0)
+simulation-1  | [parameter_bridge-7] [INFO] [1793191965.483313281] [dynamic_bridge]: Creating GZ->ROS Bridge: [/model/cart/pose (gz.msgs.Pose_V) -> /dynamic/cart/pose (tf2_msgs/msg/TFMessage)] (Lazy 0)
+simulation-1  | [parameter_bridge-7] [INFO] [1793191965.483852185] [dynamic_bridge]: Creating GZ->ROS Bridge: [/dynamic/cart/contacts (gz.msgs.Contacts) -> /dynamic/cart/contacts (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+simulation-1  | [parameter_bridge-7] [INFO] [1793191965.485119769] [dynamic_bridge]: Creating ROS->GZ Bridge: [/dynamic/cart/cmd_vel (geometry_msgs/msg/Twist) -> /model/cart/cmd_vel (gz.msgs.Twist)] (Lazy 0)
+simulation-1  | [parameter_bridge-3] [INFO] [1793191965.485634877] [ros_gz_bridge]: Creating ROS->GZ Bridge: [cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+simulation-1  | [parameter_bridge-7] [INFO] [1793191965.487494447] [dynamic_bridge]: Creating GZ->ROS Bridge: [/dynamic/contacts/base_link (gz.msgs.Contacts) -> /dynamic/contacts/base_link (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+simulation-1  | [parameter_bridge-7] [INFO] [1793191965.489498628] [dynamic_bridge]: Creating GZ->ROS Bridge: [/dynamic/contacts/base_scan (gz.msgs.Contacts) -> /dynamic/contacts/base_scan (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+simulation-1  | [parameter_bridge-7] [INFO] [1793191965.491593554] [dynamic_bridge]: Creating GZ->ROS Bridge: [/dynamic/contacts/wheel_left_link (gz.msgs.Contacts) -> /dynamic/contacts/wheel_left_link (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+simulation-1  | [parameter_bridge-7] [INFO] [1793191965.493185979] [dynamic_bridge]: Creating GZ->ROS Bridge: [/dynamic/contacts/wheel_right_link (gz.msgs.Contacts) -> /dynamic/contacts/wheel_right_link (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+simulation-1  | [parameter_bridge-7] [INFO] [1793191965.493809844] [dynamic_bridge]: Creating GZ->ROS Bridge: [/dynamic/contacts/caster_back_right_link (gz.msgs.Contacts) -> /dynamic/contacts/caster_back_right_link (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+simulation-1  | [parameter_bridge-7] [INFO] [1793191965.494410502] [dynamic_bridge]: Creating GZ->ROS Bridge: [/dynamic/contacts/caster_back_left_link (gz.msgs.Contacts) -> /dynamic/contacts/caster_back_left_link (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+simulation-1  | [parameter_bridge-7] [INFO] [1793191965.495088243] [dynamic_bridge]: Creating GZ->ROS Bridge: [/dynamic/contacts/camera_link (gz.msgs.Contacts) -> /dynamic/contacts/camera_link (ros_gz_interfaces/msg/Contacts)] (Lazy 0)
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.553518751] [lifecycle_manager_localization]: Server map_server connected with bond.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.553560725] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.553743878] [amcl]: Activating
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.553770419] [amcl]: initialPoseReceived
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.553826374] [amcl]: Setting pose (0.000000): -7.000 0.000 0.000
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.554064953] [amcl]: Creating bond (amcl) to lifecycle manager.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.558498368] [planner_server]: Creating
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.571272903] [global_costmap.global_costmap]: 
+simulation-1  | [component_container_isolated-6] 	global_costmap lifecycle node launched. 
+simulation-1  | [component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+simulation-1  | [component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.610858536] [global_costmap.global_costmap]: Creating Costmap
+simulation-1  | [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planner_server' in container '/nav2_container'
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.633338886] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libroute_server_core.so
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.638526757] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_route::RouteServer>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.638571476] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_route::RouteServer>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.651805832] [route_server]: 
+simulation-1  | [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/route_server' in container '/nav2_container'
+simulation-1  | [component_container_isolated-6] 	route_server lifecycle node launched. 
+simulation-1  | [component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+simulation-1  | [component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.656624728] [lifecycle_manager_localization]: Server amcl connected with bond.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.656662638] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.656671987] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.661175020] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libbehavior_server_core.so
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.661985302] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.662020676] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.675995704] [behavior_server]: 
+simulation-1  | [component_container_isolated-6] 	behavior_server lifecycle node launched. 
+simulation-1  | [component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+simulation-1  | [component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+simulation-1  | [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/behavior_server' in container '/nav2_container'
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.797448110] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libbt_navigator_core.so
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.809896417] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.809946959] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.826475521] [bt_navigator]: 
+simulation-1  | [component_container_isolated-6] 	bt_navigator lifecycle node launched. 
+simulation-1  | [component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+simulation-1  | [component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.931869947] [bt_navigator]: Creating
+simulation-1  | [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/bt_navigator' in container '/nav2_container'
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.943127596] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libwaypoint_follower_core.so
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.945908138] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.945944566] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.959059663] [waypoint_follower]: 
+simulation-1  | [component_container_isolated-6] 	waypoint_follower lifecycle node launched. 
+simulation-1  | [component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+simulation-1  | [component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.983996675] [waypoint_follower]: Creating
+simulation-1  | [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/waypoint_follower' in container '/nav2_container'
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.994116988] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libvelocity_smoother_core.so
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.994845385] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191965.994884454] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.008699187] [velocity_smoother]: 
+simulation-1  | [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/velocity_smoother' in container '/nav2_container'
+simulation-1  | [component_container_isolated-6] 	velocity_smoother lifecycle node launched. 
+simulation-1  | [component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+simulation-1  | [component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.018141878] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libcollision_monitor_core.so
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.021101604] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_collision_monitor::CollisionMonitor>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.021202332] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_collision_monitor::CollisionMonitor>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.036948667] [collision_monitor]: 
+simulation-1  | [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/collision_monitor' in container '/nav2_container'
+simulation-1  | [component_container_isolated-6] 	collision_monitor lifecycle node launched. 
+simulation-1  | [component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+simulation-1  | [component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.045949120] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libopennav_docking_core.so
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.048980307] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<opennav_docking::DockingServer>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.049014551] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<opennav_docking::DockingServer>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.065250256] [docking_server]: 
+simulation-1  | [component_container_isolated-6] 	docking_server lifecycle node launched. 
+simulation-1  | [component_container_isolated-6] 	Waiting on external lifecycle transitions to activate
+simulation-1  | [component_container_isolated-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.065308249] [docking_server]: Creating docking_server
+simulation-1  | [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/docking_server' in container '/nav2_container'
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.081506446] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.081577129] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.095509200] [lifecycle_manager_navigation]: Creating
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.099139026] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+simulation-1  | [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_navigation' in container '/nav2_container'
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.118416648] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.119238857] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.119657329] [controller_server]: Configuring controller interface
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.119726030] [controller_server]: getting progress checker plugins..
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.120554016] [controller_server]: getting goal checker plugins..
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.120903584] [controller_server]: Controller frequency set to 20.0000Hz
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.120956072] [local_costmap.local_costmap]: Configuring
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.126570531] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.146813192] [local_costmap.local_costmap]: Subscribed to Topics: scan
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.152196885] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.152250708] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.153566265] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.188826562] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.189553004] [controller_server]: Controller Server has progress_checker  progress checkers available.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.202697083] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.203900682] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.218133608] [controller_server]: Created controller : FollowPath of type nav2_mppi_controller::MPPIController
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.223323346] [controller_server]: Controller period is equal to model dt. Control sequence shifting is ON
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.283620225] [controller_server]: ConstraintCritic instantiated with 1 power and 4.000000 weight.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.283663275] [controller_server]: Critic loaded : mppi::critics::ConstraintCritic
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.285873480] [controller_server]: InflationCostCritic instantiated with 1 power and 300.000000 / 0.015000 weights. Critic will collision check based on footprint cost.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.285904369] [controller_server]: Critic loaded : mppi::critics::CostCritic
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.286878905] [controller_server]: GoalCritic instantiated with 1 power and 5.000000 weight.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.286908372] [controller_server]: Critic loaded : mppi::critics::GoalCritic
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.288054829] [controller_server]: GoalAngleCritic instantiated with 1 power, 3.000000 weight, 0.500000 angular threshold and symmetric_yaw_tolerance disabled
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.288083194] [controller_server]: Critic loaded : mppi::critics::GoalAngleCritic
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.290204509] [controller_server]: ReferenceTrajectoryCritic instantiated with 1 power and 5.000000 weight
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.290245320] [controller_server]: Critic loaded : mppi::critics::PathAlignCritic
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.291398485] [controller_server]: Critic loaded : mppi::critics::PathFollowCritic
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.292989106] [controller_server]: PathAngleCritic instantiated with 1 power and 4.000000 weight. Mode set to: Forward Preference
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.293017194] [controller_server]: Critic loaded : mppi::critics::PathAngleCritic
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.293932583] [controller_server]: PreferForwardCritic instantiated with 1 power and 5.000000 weight.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.293953882] [controller_server]: Critic loaded : mppi::critics::PreferForwardCritic
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.316703423] [controller_server]: Loaded time-indexed LiDAR DynamicObstacleCritic (no ground-truth input)
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.316744430] [controller_server]: Critic loaded : mppi::critics::DynamicObstacleCritic
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.319469018] [controller_server]: Optimizer reset
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.325026667] [MPPIController]: Configured MPPI Controller: FollowPath
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.325056594] [controller_server]: Controller Server has FollowPath  controllers available.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.333383993] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.334048589] [smoother_server]: Configuring smoother server
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.348774648] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.350389516] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.355428037] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.355566045] [planner_server]: Configuring
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.355593300] [global_costmap.global_costmap]: Configuring
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.361307556] [global_costmap.global_costmap]: Using plugin "static_layer"
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.371461651] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.372333289] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.372379675] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.373950380] [global_costmap.global_costmap]: Subscribed to Topics: scan
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.378922849] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.378962568] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.380204294] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.403658448] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner::NavfnPlanner
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.403716211] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.404984024] [planner_server]: Planner Server has GridBased  planners available.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.414514687] [lifecycle_manager_navigation]: [34m[1mConfiguring route_server[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.414696708] [route_server]: Configuring
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.442269074] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 440 X 340 at 0.050000 m/pix
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.465601254] [route_server]: Created GraphFileLoader GeoJsonGraphFileLoader of type nav2_route::GeoJsonGraphFileLoader
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.465666674] [route_server]: Configuring geojson graph file loader
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.465672808] [route_server]: No graph file provided to load yet.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.506234022] [route_server]: Created edge cost function plugin DistanceScorer of type nav2_route::DistanceScorer
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.506291923] [route_server]: Configuring distance scorer.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.507204157] [route_server]: Created edge cost function plugin CostmapScorer of type nav2_route::CostmapScorer
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.507227020] [route_server]: Configuring costmap scorer.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.545162768] [route_server]: Created route operation AdjustSpeedLimit of type nav2_route::AdjustSpeedLimit
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.545231956] [route_server]: Configuring Adjust speed limit operation.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.547144796] [route_server]: Created route operation ReroutingService of type nav2_route::ReroutingService
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.547173066] [route_server]: Configuring Rerouting service operation.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.548520968] [route_server]: Created route operation CollisionMonitor of type nav2_route::CollisionMonitor
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.548800807] [route_server]: Using costmap topic: local_costmap/costmap_raw instead of server costmap topic: global_costmap/costmap_raw for CollisionMonitor.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.553438700] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.553640235] [behavior_server]: Configuring
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.557458426] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors::Spin
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.571531697] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors::BackUp
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.590401061] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors::DriveOnHeading
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.601646153] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors::AssistedTeleop
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.613389270] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors::Wait
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.626494563] [behavior_server]: Configuring spin
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.635056347] [behavior_server]: Configuring backup
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.639921836] [behavior_server]: Configuring drive_on_heading
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.645731598] [behavior_server]: Configuring assisted_teleop
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.656492644] [behavior_server]: Configuring wait
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.669072597] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.669421977] [velocity_smoother]: Configuring velocity smoother
+simulation-1  | [gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="imu_link"]/sensor[@name="tb3_imu"]/gz_frame_id:<data-string>:L58]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+simulation-1  | [gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="base_scan"]/sensor[@name="hls_lfcd_lds"]/gz_frame_id:<data-string>:L143]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.680831812] [lifecycle_manager_navigation]: [34m[1mConfiguring collision_monitor[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.681072644] [collision_monitor]: Configuring
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.691038211] [collision_monitor]: [scan]: Creating Scan
+simulation-1  | [gz-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="turtlebot3_waffle"]/link[@name="camera_link"]/sensor[@name="intel_realsense_r200_depth"]/gz_frame_id:<data-string>:L415]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.695652714] [collision_monitor]: [FootprintApproach]: Creating Polygon
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.696899826] [collision_monitor]: [FootprintApproach]: Polygon points are not defined. Using dynamic subscription instead.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.702015755] [collision_monitor]: [FootprintApproach]: Making footprint subscriber on /local_costmap/published_footprint topic
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.709393979] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.709562916] [bt_navigator]: Configuring
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.714649350] [bt_navigator]: Creating navigator id navigate_to_pose of type nav2_bt_navigator::NavigateToPoseNavigator
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.829339844] [bt_navigator]: Creating navigator id navigate_through_poses of type nav2_bt_navigator::NavigateThroughPosesNavigator
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.878096531] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.878254836] [waypoint_follower]: Configuring
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.903954448] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.905034320] [lifecycle_manager_navigation]: [34m[1mConfiguring docking_server[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.905166995] [docking_server]: Configuring docking_server
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.905202769] [docking_server]: Controller frequency set to 50.0000Hz
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.972627830] [docking_server]: Created charging dock plugin simple_charging_dock of type opennav_docking::SimpleChargingDock
+simulation-1  | [component_container_isolated-6] [WARN] [1793191966.981929621] [docking_server]: Dock database filepath nor dock parameters set. Docking actions can only be executed specifying the dock pose via the action request. Or update the dock database via the reload_database service.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.981977779] [docking_server]: Docking Server has 1 dock types and 0 dock instances available.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.983821898] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.984068798] [controller_server]: Activating
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.984098074] [local_costmap.local_costmap]: Activating
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.984103354] [local_costmap.local_costmap]: Checking transform
+simulation-1  | [component_container_isolated-6] [INFO] [1793191966.984125183] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+simulation-1  | [component_container_isolated-6] [INFO] [1793191967.382966723] [amcl]: createLaserObject
+simulation-1  | [component_container_isolated-6] [INFO] [1793191967.484331530] [local_costmap.local_costmap]: start
+simulation-1  | [component_container_isolated-6] [WARN] [1793191967.585573487] [controller_server]: Parameter controller_server.verbose not found
+simulation-1  | [component_container_isolated-6] [INFO] [1793191967.588430918] [controller_server]: Optimizer reset
+simulation-1  | [component_container_isolated-6] [INFO] [1793191967.588928693] [MPPIController]: Activated MPPI Controller: FollowPath
+simulation-1  | [component_container_isolated-6] [INFO] [1793191967.588961096] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191967.693836133] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191967.693875919] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191967.694113062] [smoother_server]: Activating
+simulation-1  | [component_container_isolated-6] [INFO] [1793191967.694800986] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191967.799861895] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191967.799901499] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191967.800149387] [planner_server]: Activating
+simulation-1  | [component_container_isolated-6] [INFO] [1793191967.800183021] [global_costmap.global_costmap]: Activating
+simulation-1  | [component_container_isolated-6] [INFO] [1793191967.800188075] [global_costmap.global_costmap]: Checking transform
+simulation-1  | [component_container_isolated-6] [INFO] [1793191967.800208684] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.504000 but the earliest data is at time 1.102000, when looking up transform from frame [base_link] to frame [map]
+simulation-1  | [component_container_isolated-6] [INFO] [1793191968.300277090] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1.008000 but the earliest data is at time 1.102000, when looking up transform from frame [base_link] to frame [map]
+simulation-1  | [component_container_isolated-6] [INFO] [1793191968.800382698] [global_costmap.global_costmap]: start
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.351375161] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.353273908] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.459970614] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.460051524] [lifecycle_manager_navigation]: [34m[1mActivating route_server[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.460394384] [route_server]: Activating
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.460553109] [route_server]: Creating bond (route_server) to lifecycle manager.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.566052771] [lifecycle_manager_navigation]: Server route_server connected with bond.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.566094966] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.566381801] [behavior_server]: Activating
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.566397395] [behavior_server]: Activating spin
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.566412727] [behavior_server]: Activating backup
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.566418830] [behavior_server]: Activating drive_on_heading
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.566424270] [behavior_server]: Activating assisted_teleop
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.566429673] [behavior_server]: Activating wait
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.566439025] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.672816204] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.672859873] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.673128482] [velocity_smoother]: Activating
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.673172478] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.781203032] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.781256709] [lifecycle_manager_navigation]: [34m[1mActivating collision_monitor[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.781749532] [collision_monitor]: Activating
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.781842700] [collision_monitor]: Creating bond (collision_monitor) to lifecycle manager.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.889361864] [lifecycle_manager_navigation]: Server collision_monitor connected with bond.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.889405266] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.889792033] [bt_navigator]: Activating
+simulation-1  | [component_container_isolated-6] [INFO] [1793191969.976925681] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191970.084868892] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191970.084905879] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191970.085163434] [waypoint_follower]: Activating
+simulation-1  | [component_container_isolated-6] [INFO] [1793191970.085194794] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191970.193779166] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191970.193854568] [lifecycle_manager_navigation]: [34m[1mActivating docking_server[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191970.194431202] [docking_server]: Activating docking_server
+simulation-1  | [component_container_isolated-6] [INFO] [1793191970.207680618] [docking_server]: Creating bond (docking_server) to lifecycle manager.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191970.317149642] [lifecycle_manager_navigation]: Server docking_server connected with bond.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191970.317197843] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+simulation-1  | [component_container_isolated-6] [INFO] [1793191970.317201873] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+simulation-1  | [parameter_bridge-7] [INFO] [1793191970.679604996] [dynamic_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+simulation-1  | [component_container_isolated-6] [INFO] [1793191970.686816567] [bt_navigator]: Begin navigating from current location (-7.00, 0.00) to (7.00, 0.00)
+simulation-1  | [component_container_isolated-6] [INFO] [1793191970.707778976] [controller_server]: Received a goal, begin computing control effort.
+simulation-1  | [component_container_isolated-6] [WARN] [1793191970.707832876] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+simulation-1  | [component_container_isolated-6] [WARN] [1793191970.707846243] [controller_server]: No progress checker was specified in parameter 'current_progress_checker'. Server will use only plugin loaded progress_checker . This warning will appear once.
+simulation-1  | [parameter_bridge-3] [INFO] [1793191971.636710425] [ros_gz_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+simulation-1  | [component_container_isolated-6] [INFO] [1793191971.758057092] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191972.808018827] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191973.365093766] [controller_server]: DynamicObstacleCritic scored 2000 trajectories against 1 live LiDAR tracks
+simulation-1  | [component_container_isolated-6] [INFO] [1793191973.808052853] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191974.858052748] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191975.854392810] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191976.904392106] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191977.904406566] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191978.363164640] [controller_server]: DynamicObstacleCritic scored 2000 trajectories against 1 live LiDAR tracks
+simulation-1  | [component_container_isolated-6] [INFO] [1793191978.954393627] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191979.954404332] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191981.004416944] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191982.004481557] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191983.054450780] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191983.411772751] [controller_server]: DynamicObstacleCritic scored 2000 trajectories against 1 live LiDAR tracks
+simulation-1  | [component_container_isolated-6] [INFO] [1793191984.054389701] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191985.104391217] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191986.104478839] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191987.154399334] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191988.154399415] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191988.411096926] [controller_server]: DynamicObstacleCritic scored 2000 trajectories against 1 live LiDAR tracks
+simulation-1  | [component_container_isolated-6] [INFO] [1793191989.204409900] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191990.204395582] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191991.254391621] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191992.254393512] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191993.304429121] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191993.411347486] [controller_server]: DynamicObstacleCritic scored 2000 trajectories against 1 live LiDAR tracks
+simulation-1  | [component_container_isolated-6] [INFO] [1793191994.304447174] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191995.354433468] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191996.354392016] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191997.404398050] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191998.404475756] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793191998.461837875] [controller_server]: DynamicObstacleCritic scored 2000 trajectories against 1 live LiDAR tracks
+simulation-1  | [component_container_isolated-6] [INFO] [1793191999.454481170] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192000.454429599] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192001.504477380] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192002.504395047] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192003.504395370] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192003.510959380] [controller_server]: DynamicObstacleCritic scored 2000 trajectories against 1 live LiDAR tracks
+simulation-1  | [component_container_isolated-6] [INFO] [1793192004.554489052] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192005.551280693] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192006.601278777] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192007.601248114] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192008.508123269] [controller_server]: DynamicObstacleCritic scored 2000 trajectories against 1 live LiDAR tracks
+simulation-1  | [component_container_isolated-6] [INFO] [1793192008.651248641] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192009.651235617] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192010.701317308] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192011.701234136] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192012.751241487] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192013.508091621] [controller_server]: DynamicObstacleCritic scored 2000 trajectories against 1 live LiDAR tracks
+simulation-1  | [component_container_isolated-6] [INFO] [1793192013.751235690] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192014.801244760] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192015.801276727] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192016.801325505] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192017.851266432] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192018.508999246] [controller_server]: DynamicObstacleCritic scored 2000 trajectories against 1 live LiDAR tracks
+simulation-1  | [component_container_isolated-6] [INFO] [1793192018.851306092] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192019.901246396] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192020.951187023] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192021.951292113] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192022.951288975] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192023.558022186] [controller_server]: DynamicObstacleCritic scored 2000 trajectories against 1 live LiDAR tracks
+simulation-1  | [component_container_isolated-6] [INFO] [1793192024.001402772] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192025.051222360] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192026.051243732] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192027.051252348] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192028.101264597] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192028.559368711] [controller_server]: DynamicObstacleCritic scored 2000 trajectories against 1 live LiDAR tracks
+simulation-1  | [component_container_isolated-6] [INFO] [1793192029.151291052] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192030.151202696] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192031.201210566] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192032.201234785] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192033.251253300] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192033.608208968] [controller_server]: DynamicObstacleCritic scored 2000 trajectories against 1 live LiDAR tracks
+simulation-1  | [component_container_isolated-6] [INFO] [1793192034.251245896] [controller_server]: Passing new path to controller.
+simulation-1  | [component_container_isolated-6] [INFO] [1793192035.151424952] [controller_server]: Reached the goal!
+simulation-1  | [component_container_isolated-6] [INFO] [1793192035.152955214] [controller_server]: Optimizer reset
+simulation-1  | [component_container_isolated-6] [INFO] [1793192035.180475734] [bt_navigator]: Goal succeeded

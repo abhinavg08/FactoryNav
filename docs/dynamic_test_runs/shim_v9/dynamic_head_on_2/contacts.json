@@ -1,0 +1,67 @@
+[
+  {
+    "sim_s": 30.999,
+    "collisions": [
+      "human_b::body::traffic_collision",
+      "turtlebot3_waffle::base_link::base_collision"
+    ],
+    "depths": [
+      7.826795490625815e-05,
+      7.826795490625815e-05
+    ]
+  },
+  {
+    "sim_s": 31.26,
+    "collisions": [
+      "human_b::body::traffic_collision",
+      "turtlebot3_waffle::camera_link::collision"
+    ],
+    "depths": [
+      6.541271154188698e-05,
+      6.541271154188698e-05
+    ]
+  },
+  {
+    "sim_s": 32.262,
+    "collisions": [
+      "human_b::body::traffic_collision",
+      "turtlebot3_waffle::base_link::base_collision"
+    ],
+    "depths": [
+      4.8298991991185813e-05,
+      4.8298991991185813e-05
+    ]
+  },
+  {
+    "sim_s": 32.589,
+    "collisions": [
+      "human_b::body::traffic_collision",
+      "turtlebot3_waffle::camera_link::collision"
+    ],
+    "depths": [
+      9.904785864808807e-06,
+      9.904785864805338e-06
+    ]
+  },
+  {
+    "sim_s": 48.429,
+    "collisions": [
+      "human_b::body::traffic_collision",
+      "turtlebot3_waffle::base_scan::lidar_sensor_collision"
+    ],
+    "depths": [
+      2.6169700373976327e-05
+    ]
+  },
+  {
+    "sim_s": 51.273,
+    "collisions": [
+      "human_b::body::traffic_collision",
+      "turtlebot3_waffle::camera_link::collision"
+    ],
+    "depths": [
+      8.573903596706227e-05,
+      8.573903596706227e-05
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+[INFO] [launch]: All log files can be found below /workspace/log/ros/2026-10-28-07-20-54-402178-ba61999e0598-25
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [xacro-1]: process started with pid [50]
+[INFO] [parameter_bridge-2]: process started with pid [51]
+[INFO] [create-3]: process started with pid [52]
+[INFO] [gz-4]: process started with pid [53]
+[INFO] [robot_state_publisher-5]: process started with pid [54]
+[INFO] [component_container_isolated-6]: process started with pid [55]
+[INFO] [parameter_bridge-7]: process started with pid [56]
+[create-3] [INFO] [1793172055.438626183] [ros_gz_sim]: Requesting list of world names.
+[robot_state_publisher-5] [INFO] [1793172055.442271714] [robot_state_publisher]: Robot initialized
+[gz-4] Unable to find or download file 
+[ERROR] [gz-4]: process has died [pid 53, exit code 255, cmd 'gz sim -r -s /tmp/nav2_fpenh8yr.sdf'].
+[INFO] [xacro-1]: process has finished cleanly [pid 50]
+[component_container_isolated-6] [INFO] [1793172055.608228966] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libmap_server_core.so

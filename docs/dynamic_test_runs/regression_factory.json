@@ -1,0 +1,32 @@
+{
+  "goal": {
+    "x": 4.5,
+    "y": 0.0,
+    "yaw": 0.0
+  },
+  "success": true,
+  "phase": "complete",
+  "lifecycle": {
+    "amcl": "active",
+    "map_server": "active",
+    "planner_server": "active",
+    "controller_server": "active",
+    "bt_navigator": "active"
+  },
+  "completion_wall_time_s": 25.903,
+  "action_status": 4,
+  "nav2_error_code": 0,
+  "scan_messages": 148,
+  "odom_messages": 820,
+  "global_plan_messages": 26,
+  "amcl_pose_messages": 39,
+  "observed_odom_path_length_m": 8.901,
+  "minimum_observed_lidar_range_m": 0.945,
+  "map_to_base_link": 1,
+  "odom_to_base_link": 1,
+  "simulation_time_s": 29.64,
+  "maximum_abs_global_plan_y_m": 0.1,
+  "maximum_abs_odom_y_m": 0.04,
+  "unexpected_obstacle_spawned": false,
+  "unexpected_obstacle_marked_in_global_costmap": false
+}

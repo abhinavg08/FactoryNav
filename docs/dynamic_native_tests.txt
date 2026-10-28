@@ -1,0 +1,19 @@
+Start testing: Oct 28 09:33 UTC
+----------------------------------------------------------
+1/1 Testing: temporal_collision_timing
+1/1 Test: temporal_collision_timing
+Command: "/workspace/build/factorynav_mppi_critics/test_temporal_cost"
+Directory: /workspace/build/factorynav_mppi_critics
+"temporal_collision_timing" start time: Oct 28 09:33 UTC
+Output:
+----------------------------------------------------------
+Temporal collision and lateral avoidance checks passed
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"temporal_collision_timing" end time: Oct 28 09:33 UTC
+"temporal_collision_timing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 28 09:33 UTC

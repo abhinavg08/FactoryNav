@@ -1,0 +1,1 @@
+{"device": "cpu", "received": 623, "processed": 297, "source_stamp_s": 153.402, "source_sequence": 621, "latency_ms": 39.13, "observed_output_hz": 1.894, "frame_id": "camera_rgb_optical_frame", "detections": []}

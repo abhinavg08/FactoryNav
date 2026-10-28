@@ -82,6 +82,22 @@ without registry calls. `setup/perception_wheels.lock.json` records wheel source
 and hashes, and `docs/perception-python.lock.txt` records the installed packages.
 The Windows Conda tooling environment remains separate from this Linux runtime.
 
+## Advanced dynamic factory
+
+After the existing base/perception images and person asset cache are ready:
+
+```powershell
+.\.conda\python.exe setup/fetch_person.py
+.\scripts\run_demo.ps1 -DynamicFactory -Perception
+```
+
+The launcher builds the native MPPI critic against the installed Jazzy headers
+when needed. Omit `-Perception` for LiDAR navigation alone. Use `-Headless` for
+benchmarks and `-Traffic none` before a benchmark that creates its own actors.
+See [advanced commands](dynamic_commands.md), [measurement definitions](dynamic_factory_architecture.md)
+and [measured results](dynamic_navigation_results.md). The original launchers
+above continue to select the original factory.
+
 For a Linux machine with Docker, the core workflow is also available without
 PowerShell:
 

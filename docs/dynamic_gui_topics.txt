@@ -1,0 +1,48 @@
+Type: visualization_msgs/msg/MarkerArray
+Publisher count: 1
+Subscription count: 1
+/rviz
+  Subscribers:
+    /clock: rosgraph_msgs/msg/Clock
+    /downsampled_costmap: nav_msgs/msg/OccupancyGrid
+    /downsampled_costmap_updates: map_msgs/msg/OccupancyGridUpdate
+    /dynamic/predicted_obstacles: sensor_msgs/msg/PointCloud2
+    /global_costmap/costmap: nav_msgs/msg/OccupancyGrid
+    /global_costmap/costmap_updates: map_msgs/msg/OccupancyGridUpdate
+    /global_costmap/voxel_marked_cloud: sensor_msgs/msg/PointCloud2
+    /local_costmap/costmap: nav_msgs/msg/OccupancyGrid
+    /local_costmap/costmap_updates: map_msgs/msg/OccupancyGridUpdate
+    /local_costmap/published_footprint: geometry_msgs/msg/PolygonStamped
+    /local_costmap/voxel_marked_cloud: sensor_msgs/msg/PointCloud2
+    /local_plan: nav_msgs/msg/Path
+    /map: nav_msgs/msg/OccupancyGrid
+    /map_updates: map_msgs/msg/OccupancyGridUpdate
+    /mobile_base/sensors/bumper_pointcloud: sensor_msgs/msg/PointCloud2
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+    /particle_cloud: nav2_msgs/msg/ParticleCloud
+    /perception/annotated: sensor_msgs/msg/Image
+    /plan: nav_msgs/msg/Path
+    /scan: sensor_msgs/msg/LaserScan
+    /trajectories: visualization_msgs/msg/MarkerArray
+    /waypoints: visualization_msgs/msg/MarkerArray
+  Publishers:
+    /clicked_point: geometry_msgs/msg/PointStamped
+    /initialpose: geometry_msgs/msg/PoseWithCovarianceStamped
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+    /rosout: rcl_interfaces/msg/Log
+  Service Servers:
+    /rviz/describe_parameters: rcl_interfaces/srv/DescribeParameters
+    /rviz/get_parameter_types: rcl_interfaces/srv/GetParameterTypes
+    /rviz/get_parameters: rcl_interfaces/srv/GetParameters
+    /rviz/get_type_description: type_description_interfaces/srv/GetTypeDescription
+    /rviz/list_parameters: rcl_interfaces/srv/ListParameters
+    /rviz/reset_time: std_srvs/srv/Empty
+    /rviz/set_parameters: rcl_interfaces/srv/SetParameters
+    /rviz/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
+  Service Clients:
+
+  Action Servers:
+
+  Action Clients:
+    /navigate_through_poses: nav2_msgs/action/NavigateThroughPoses
+    /navigate_to_pose: nav2_msgs/action/NavigateToPose

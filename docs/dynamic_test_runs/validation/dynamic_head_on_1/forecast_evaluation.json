@@ -1,0 +1,10 @@
+{
+  "active_track_observations": 159,
+  "associated_with_truth_within_0_9m": 159,
+  "samples_without_odom_yaw": 0,
+  "median_velocity_vector_error_m_s": 0.029745322010890626,
+  "p95_velocity_vector_error_m_s": 0.0889685954408097,
+  "median_2s_displacement_error_m": 0.05833607466018552,
+  "p95_2s_displacement_error_m": 0.18852282339800477,
+  "note": "Offline truth association for evaluation only. Includes reversals and acceleration; not semantic tracking or intent prediction."
+}

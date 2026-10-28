@@ -1,4 +1,102 @@
-# FactoryNav AI
+# FactoryNav AI 2.0
+
+Dynamic human-aware navigation in a simulated industrial environment, using
+ROS 2 Jazzy, Gazebo Harmonic, Nav2 MPPI, LiDAR, and optional live YOLO26.
+The original working factory remains available below.
+
+## Advanced factory mode
+
+```powershell
+.\scripts\run_demo.ps1 -DynamicFactory -Perception
+```
+
+Open the [Gazebo + RViz desktop](http://localhost:6080/vnc.html?autoconnect=1&resize=scale).
+The larger factory contains seven stations, outer routes, crossing aisles,
+two independently moving physical human proxies, and an industrial cart.
+Use `-Headless` for automated work, `-Traffic none` for a static world, and
+omit `-Perception` to run navigation independently of YOLO.
+
+```mermaid
+flowchart LR
+  Traffic[Independent humans and cart] --> Gazebo[Gazebo physics and sensors]
+  Gazebo --> Lidar[LiDAR]
+  Lidar --> Costs[Scan costmaps]
+  Lidar --> Motion[Geometric motion estimates]
+  Costs --> Nav2[Nav2 planner and MPPI]
+  Motion --> Nav2
+  Nav2 --> Safety[Velocity smoother and Collision Monitor]
+  Safety --> Robot[TurtleBot3]
+  Robot --> Gazebo
+  Gazebo --> Camera[Camera and YOLO26]
+  Camera --> Display[ROS detections and annotations]
+```
+
+![Generated factory map](media/dynamic_factory_map.png)
+
+![Actual Gazebo and RViz desktop](media/dynamic_factory_gui.jpg)
+
+The final headless matrix accepted **17/17 advanced trials**: three each of
+head-on, crossing, alongside, cart and full mission, plus blocked-bay and
+shared-cart checks. All three head-on passes had zero nearby stopped time;
+their minimum footprint clearance was 0.227 m. All three full missions reached
+Assembly, Quality and Delivery with independently moving traffic and YOLO.
+Original factory, obstacle-detour and camera regressions passed again.
+
+The original MPPI settings accepted 1/3 head-on trials under the same stricter
+checks, despite reaching all three goals. The advanced profile trades some
+time and computation for a larger measured margin. Limits remain: one cart
+gap was only 0.087 m, and the blocked bay reported 15 recovery feedback events.
+See the [measured results](docs/dynamic_navigation_results.md) for every outcome.
+
+Run the real Loading → Assembly → Quality → Delivery mission in the running
+advanced GUI with its existing traffic:
+
+```powershell
+docker compose exec -T simulation bash -lc 'source /opt/ros/jazzy/setup.bash; export PYTHONPATH=/workspace/factorynav_dynamic:$PYTHONPATH; python3 -m factorynav_dynamic.benchmark --scenario full --external-traffic --output /workspace/log/dynamic/live_mission'
+```
+
+Run reproducible fresh-world scenarios (three attempts each by default):
+
+```powershell
+.\.conda\python.exe scripts/test_dynamic_scenarios.py --final-suite --output docs/dynamic_test_runs/reproduction_all
+.\.conda\python.exe scripts/test_dynamic_scenarios.py --output docs/dynamic_test_runs/reproduction
+.\.conda\python.exe scripts/test_dynamic_scenarios.py --scenarios head_on --profiles baseline dynamic --repeat 3 --output docs/dynamic_test_runs/reproduction_comparison
+.\.conda\python.exe scripts/test_dynamic_scenarios.py --scenarios full --repeat 3 --perception --output docs/dynamic_test_runs/reproduction_yolo
+.\.conda\python.exe scripts/test_dynamic_scenarios.py --scenarios blocked cart_shared --repeat 1 --output docs/dynamic_test_runs/reproduction_extra
+```
+
+Available scenarios are `static`, `head_on`, `crossing`, `alongside`, `cart`,
+`cart_shared`, `blocked`, and `full`. `contact_probe` deliberately causes a
+collision to calibrate the contact sensors and is excluded from safe-navigation
+success rates. Output directories must be new to preserve evidence.
+
+Each experiment saves action results, robot/actor trajectories, conservative
+footprint clearance, physical contact events, stopped/slowing time, LiDAR and
+costmap observations, recovery counts, effective Nav2 parameters, and Docker
+resource samples. Perception runs also save detections, confidence, inference
+latency and actual annotated frames. The original controller was already MPPI;
+the comparison evaluates original settings against the advanced tuning.
+
+Read the [architecture and measurement definitions](docs/dynamic_factory_architecture.md),
+[navigation results](docs/dynamic_navigation_results.md),
+[controller comparison](docs/controller_comparison.md), and
+[105-second recording plan](docs/demo_script.md).
+The [command reference](docs/dynamic_commands.md) also covers separate human/cart activation.
+The final MP4 has not been recorded. Actual screenshots and trajectory plots
+are linked in the results report. No GitHub publication has been performed.
+
+Navigation uses raw LiDAR costmaps and a native MPPI critic that compares
+candidate robot trajectories with constant-velocity estimates from LiDAR
+clusters at matching future times. A separate two-second preview is visual
+only. There is no human intent prediction or semantic velocity control.
+YOLO publishes detections and images; Nav2 does
+not consume them. The standing human meshes translate and turn without a
+walking gait. Software rendering and CPU inference are the tested fallback.
+The LiDAR rectangle fitter declares a configurable 1.0 × 0.7 m size prior for
+partially occluded industrial equipment; different dimensions require fresh
+validation. Ground-truth actor poses are used only to evaluate the results.
+
+## Original factory and development setup
 
 TurtleBot3 material transport with ROS 2 Jazzy, Gazebo Harmonic, Nav2, and LiDAR.
 Development workspace: `D:\cele`. Factory navigation, unexpected-obstacle

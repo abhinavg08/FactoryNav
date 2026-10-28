@@ -1,0 +1,11 @@
+[INFO] [1793195619.502564846] [factorynav_yolo]: YOLO26 ready on cpu; latest-frame worker, no velocity publisher
+[WARN] [1793195625.072121354] [factorynav_yolo]: Discarding stale completed inference
+[INFO] [1793195630.620970176] [factorynav_yolo]: 10 frames; 70 ms; 0 detections
+[INFO] [1793195637.834090242] [factorynav_yolo]: 20 frames; 87 ms; 1 detections
+[INFO] [1793195644.257288595] [factorynav_yolo]: 30 frames; 330 ms; 1 detections
+[INFO] [1793195651.417753358] [factorynav_yolo]: 40 frames; 210 ms; 1 detections
+[INFO] [1793195657.715908580] [factorynav_yolo]: 50 frames; 123 ms; 0 detections
+[INFO] [1793195664.446785641] [factorynav_yolo]: 60 frames; 143 ms; 0 detections
+[INFO] [1793195669.674907020] [factorynav_yolo]: 70 frames; 414 ms; 0 detections
+[INFO] [1793195674.968662574] [factorynav_yolo]: 80 frames; 131 ms; 0 detections
+[INFO] [1793195680.625691786] [factorynav_yolo]: 90 frames; 93 ms; 0 detections

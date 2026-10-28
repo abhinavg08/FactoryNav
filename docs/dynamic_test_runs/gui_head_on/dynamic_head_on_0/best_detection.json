@@ -1,0 +1,22 @@
+{
+  "device": "cpu",
+  "received": 82,
+  "processed": 41,
+  "source_stamp_s": 25.8,
+  "source_sequence": 82,
+  "latency_ms": 174.51,
+  "observed_output_hz": 1.265,
+  "frame_id": "camera_rgb_optical_frame",
+  "detections": [
+    {
+      "class": "person",
+      "score": 0.8989606499671936,
+      "xyxy": [
+        348.5827331542969,
+        0.0,
+        463.4421691894531,
+        195.92611694335938
+      ]
+    }
+  ]
+}

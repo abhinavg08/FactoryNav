@@ -1,0 +1,26 @@
+[
+  {
+    "wall_time": 1793175353.4759583,
+    "BlockIO": "152kB / 90.1kB",
+    "CPUPerc": "178.53%",
+    "Container": "cele-simulation-1",
+    "ID": "5b08e2eefe0e",
+    "MemPerc": "4.78%",
+    "MemUsage": "373.1MiB / 7.623GiB",
+    "Name": "cele-simulation-1",
+    "NetIO": "35.4kB / 34.5kB",
+    "PIDs": "173"
+  },
+  {
+    "wall_time": 1793175359.6299741,
+    "BlockIO": "152kB / 90.1kB",
+    "CPUPerc": "165.73%",
+    "Container": "cele-simulation-1",
+    "ID": "5b08e2eefe0e",
+    "MemPerc": "10.83%",
+    "MemUsage": "845.3MiB / 7.623GiB",
+    "Name": "cele-simulation-1",
+    "NetIO": "212kB / 211kB",
+    "PIDs": "258"
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "scenario": "crossing",
+  "controller_profile": "dynamic",
+  "seed": 0,
+  "traffic_configuration": [
+    {
+      "name": "human_a",
+      "kind": "human",
+      "route": [
+        [
+          0,
+          -1.8
+        ],
+        [
+          0,
+          1.8
+        ]
+      ],
+      "speed": 0.25,
+      "delay": 6,
+      "loop": true
+    }
+  ],
+  "success": false,
+  "navigation_success": false,
+  "safety_pass": false,
+  "goals": [
+    {
+      "goal": [
+        5,
+        0,
+        0
+      ],
+      "status": 6,
+      "error_code": 103,
+      "wall_s": 65.80067215100007,
+      "simulation_s": 64.989
+    }
+  ],
+  "error": "Navigation action failed",
+  "samples": 650,
+  "path_length_m": 12.77563977954758,
+  "minimum_estimated_footprint_clearance_m": -0.06812306807847884,
+  "contact_events": 1,
+  "contact_messages_received": 92133,
+  "stopped_sim_s": 7.5989999999999895,
+  "slowing_sim_s": 24.59400000000002,
+  "moving_sim_s": 57.30300000000001,
+  "recovery_count": 0,
+  "near_agent_stopped_sim_s": 5.696999999999992,
+  "near_agent_progress_m": 5.818103658537361,
+  "near_agent_duration_sim_s": 37.30200000000001,
+  "longest_near_agent_stop_s": 2.0999999999999943,
+  "minimum_agent_footprint_clearance_m": -0.06812306807847884,
+  "interactions": {
+    "human_a": {
+      "agent_travel_m": 12.746127214544083,
+      "relative_x_order_changed": true,
+      "maximum_robot_lateral_offset_m": 2.200733365826717,
+      "reentered_vacated_agent_footprint": null
+    }
+  },
+  "sensor_validation": {
+    "human_a": {
+      "lidar_observed_samples": 61,
+      "lethal_costmap_samples": 46,
+      "clearing_observations": 3
+    }
+  },
+  "clearance_margin_0_08m_pass": false,
+  "continuous_passing_evidence": false,
+  "contact_measurement": "Gazebo contact messages and conservative ground-truth oriented rectangle/circle clearances sampled at 10 Hz. Isolated contact_probe validates sensor transport.",
+  "perception_messages": 0,
+  "person_detection_frames": 0,
+  "maximum_person_confidence": null,
+  "median_inference_ms": null,
+  "host_elapsed_s": 73.75
+}

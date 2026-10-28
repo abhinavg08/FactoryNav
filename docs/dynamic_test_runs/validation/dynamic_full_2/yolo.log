@@ -1,0 +1,37 @@
+[INFO] [1793193970.622884954] [factorynav_yolo]: YOLO26 ready on cpu; latest-frame worker, no velocity publisher
+[WARN] [1793193975.734417547] [factorynav_yolo]: Discarding stale completed inference
+[INFO] [1793193982.272927344] [factorynav_yolo]: 10 frames; 37 ms; 1 detections
+[INFO] [1793193987.273509159] [factorynav_yolo]: 20 frames; 38 ms; 1 detections
+[INFO] [1793193992.290755727] [factorynav_yolo]: 30 frames; 32 ms; 1 detections
+[INFO] [1793193997.283469865] [factorynav_yolo]: 40 frames; 36 ms; 0 detections
+[INFO] [1793194002.323258064] [factorynav_yolo]: 50 frames; 39 ms; 0 detections
+[INFO] [1793194007.340815364] [factorynav_yolo]: 60 frames; 80 ms; 0 detections
+[INFO] [1793194012.865844129] [factorynav_yolo]: 70 frames; 33 ms; 0 detections
+[INFO] [1793194017.871874658] [factorynav_yolo]: 80 frames; 34 ms; 0 detections
+[INFO] [1793194022.902864451] [factorynav_yolo]: 90 frames; 33 ms; 0 detections
+[INFO] [1793194027.934646138] [factorynav_yolo]: 100 frames; 30 ms; 0 detections
+[INFO] [1793194032.943789283] [factorynav_yolo]: 110 frames; 34 ms; 0 detections
+[INFO] [1793194037.953421354] [factorynav_yolo]: 120 frames; 39 ms; 0 detections
+[INFO] [1793194042.964239472] [factorynav_yolo]: 130 frames; 35 ms; 0 detections
+[INFO] [1793194047.986252984] [factorynav_yolo]: 140 frames; 33 ms; 0 detections
+[INFO] [1793194052.998163531] [factorynav_yolo]: 150 frames; 41 ms; 0 detections
+[INFO] [1793194058.011469161] [factorynav_yolo]: 160 frames; 39 ms; 0 detections
+[INFO] [1793194063.537367004] [factorynav_yolo]: 170 frames; 54 ms; 0 detections
+[INFO] [1793194068.562747295] [factorynav_yolo]: 180 frames; 34 ms; 0 detections
+[INFO] [1793194073.581068496] [factorynav_yolo]: 190 frames; 33 ms; 0 detections
+[INFO] [1793194078.595637340] [factorynav_yolo]: 200 frames; 38 ms; 0 detections
+[INFO] [1793194084.104446035] [factorynav_yolo]: 210 frames; 29 ms; 0 detections
+[INFO] [1793194089.119806160] [factorynav_yolo]: 220 frames; 38 ms; 0 detections
+[INFO] [1793194094.138261797] [factorynav_yolo]: 230 frames; 39 ms; 0 detections
+[INFO] [1793194099.145423595] [factorynav_yolo]: 240 frames; 34 ms; 0 detections
+[INFO] [1793194104.152019726] [factorynav_yolo]: 250 frames; 28 ms; 0 detections
+[INFO] [1793194109.158767282] [factorynav_yolo]: 260 frames; 35 ms; 0 detections
+[INFO] [1793194114.177273352] [factorynav_yolo]: 270 frames; 37 ms; 0 detections
+[INFO] [1793194119.192600447] [factorynav_yolo]: 280 frames; 41 ms; 0 detections
+[INFO] [1793194124.227537270] [factorynav_yolo]: 290 frames; 35 ms; 0 detections
+[INFO] [1793194129.246412581] [factorynav_yolo]: 300 frames; 32 ms; 0 detections
+[INFO] [1793194134.285530601] [factorynav_yolo]: 310 frames; 49 ms; 0 detections
+[INFO] [1793194139.782891893] [factorynav_yolo]: 320 frames; 35 ms; 0 detections
+[INFO] [1793194145.284388960] [factorynav_yolo]: 330 frames; 34 ms; 0 detections
+[INFO] [1793194150.301760530] [factorynav_yolo]: 340 frames; 37 ms; 0 detections
+[INFO] [1793194155.314527635] [factorynav_yolo]: 350 frames; 35 ms; 0 detections

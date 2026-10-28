@@ -1,0 +1,110 @@
+{
+  "scenario": "crossing",
+  "controller_profile": "dynamic",
+  "seed": 0,
+  "traffic_configuration": [
+    {
+      "name": "human_a",
+      "kind": "human",
+      "route": [
+        [
+          0,
+          -1.8
+        ],
+        [
+          0,
+          1.8
+        ]
+      ],
+      "speed": 0.25,
+      "delay": 6,
+      "loop": true
+    }
+  ],
+  "success": false,
+  "acceptance_checks": {
+    "navigation_succeeded": false,
+    "no_contact_or_overlap": false,
+    "physical_clearance_at_least_0_08m": false,
+    "actors_moved": true,
+    "actors_lidar_observed": true,
+    "local_costmap_marking": true,
+    "head_on_continuous_passing": true,
+    "blocked_wait_and_progress": true
+  },
+  "observed_cmd_vel_sources": {
+    "publisher_gid_unavailable_in_rclpy_metadata": 1125
+  },
+  "advertised_cmd_vel_publishers": {
+    "010f8c15640036db000000000002e803": "collision_monitor",
+    "010f8c15640036db0000000000034703": "docking_server"
+  },
+  "navigation_success": false,
+  "safety_pass": false,
+  "goals": [
+    {
+      "goal": [
+        5,
+        0,
+        0
+      ],
+      "status": 6,
+      "error_code": 208,
+      "recoveries": 17,
+      "wall_s": 79.16052571400178,
+      "simulation_s": 78.378
+    }
+  ],
+  "error": "Navigation action failed",
+  "samples": 783,
+  "path_length_m": 13.080269724562822,
+  "minimum_estimated_footprint_clearance_m": -0.07037119206838516,
+  "contact_events": 2,
+  "contact_messages_received": 110554,
+  "stopped_sim_s": 23.601,
+  "slowing_sim_s": 21.0,
+  "moving_sim_s": 54.599999999999994,
+  "recovery_count": 17,
+  "near_agent_stopped_sim_s": 7.203000000000003,
+  "near_agent_progress_m": 6.565768922905301,
+  "near_agent_duration_sim_s": 36.498,
+  "longest_near_agent_stop_s": 2.301000000000002,
+  "minimum_agent_footprint_clearance_m": -0.07037119206838516,
+  "interactions": {
+    "human_a": {
+      "agent_travel_m": 15.442420163169865,
+      "relative_x_order_changed": true,
+      "maximum_robot_lateral_offset_m": 2.1215764445326686,
+      "reentered_vacated_agent_footprint": {
+        "earlier_sim_s": 18.0,
+        "reentry_sim_s": 26.301,
+        "location": [
+          -3.809452753245071e-18,
+          0.37673520000003347
+        ]
+      }
+    }
+  },
+  "sensor_validation": {
+    "human_a": {
+      "lidar_observed_samples": 58,
+      "lethal_costmap_samples": 43,
+      "clearing_observations": 3
+    }
+  },
+  "clearance_margin_0_08m_pass": false,
+  "angular_command_sign_changes_over_0_25rad_s": 2,
+  "continuous_passing_evidence": false,
+  "contact_measurement": "Gazebo contact messages and conservative ground-truth oriented rectangle/circle clearances sampled at 10 Hz. Isolated contact_probe validates sensor transport.",
+  "perception_messages": 0,
+  "person_detection_frames": 0,
+  "ros_detection_messages": 0,
+  "person_frames_with_moving_human_in_camera_frustum": 0,
+  "ros_person_detection_messages": 0,
+  "forecast_enabled": true,
+  "forecast_messages": 784,
+  "forecast_active_messages": 396,
+  "maximum_person_confidence": null,
+  "median_inference_ms": null,
+  "host_elapsed_s": 86.82799999999406
+}

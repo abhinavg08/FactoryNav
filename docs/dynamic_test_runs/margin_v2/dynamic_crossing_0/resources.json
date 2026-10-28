@@ -1,0 +1,98 @@
+[
+  {
+    "wall_time": 1793173943.041828,
+    "BlockIO": "0B / 0B",
+    "CPUPerc": "143.39%",
+    "Container": "cele-simulation-1",
+    "ID": "a99970176adb",
+    "MemPerc": "1.25%",
+    "MemUsage": "97.86MiB / 7.623GiB",
+    "Name": "cele-simulation-1",
+    "NetIO": "1.29kB / 688B",
+    "PIDs": "24"
+  },
+  {
+    "wall_time": 1793173949.1917405,
+    "BlockIO": "0B / 0B",
+    "CPUPerc": "226.88%",
+    "Container": "cele-simulation-1",
+    "ID": "a99970176adb",
+    "MemPerc": "8.38%",
+    "MemUsage": "654MiB / 7.623GiB",
+    "Name": "cele-simulation-1",
+    "NetIO": "176kB / 175kB",
+    "PIDs": "239"
+  },
+  {
+    "wall_time": 1793173955.3447976,
+    "BlockIO": "0B / 0B",
+    "CPUPerc": "219.49%",
+    "Container": "cele-simulation-1",
+    "ID": "a99970176adb",
+    "MemPerc": "11.35%",
+    "MemUsage": "886.2MiB / 7.623GiB",
+    "Name": "cele-simulation-1",
+    "NetIO": "344kB / 343kB",
+    "PIDs": "244"
+  },
+  {
+    "wall_time": 1793173961.6773717,
+    "BlockIO": "0B / 0B",
+    "CPUPerc": "240.38%",
+    "Container": "cele-simulation-1",
+    "ID": "a99970176adb",
+    "MemPerc": "11.36%",
+    "MemUsage": "886.6MiB / 7.623GiB",
+    "Name": "cele-simulation-1",
+    "NetIO": "538kB / 537kB",
+    "PIDs": "244"
+  },
+  {
+    "wall_time": 1793173967.828503,
+    "BlockIO": "0B / 0B",
+    "CPUPerc": "227.34%",
+    "Container": "cele-simulation-1",
+    "ID": "a99970176adb",
+    "MemPerc": "11.36%",
+    "MemUsage": "886.9MiB / 7.623GiB",
+    "Name": "cele-simulation-1",
+    "NetIO": "704kB / 703kB",
+    "PIDs": "244"
+  },
+  {
+    "wall_time": 1793173973.981389,
+    "BlockIO": "0B / 0B",
+    "CPUPerc": "253.04%",
+    "Container": "cele-simulation-1",
+    "ID": "a99970176adb",
+    "MemPerc": "11.36%",
+    "MemUsage": "886.9MiB / 7.623GiB",
+    "Name": "cele-simulation-1",
+    "NetIO": "872kB / 871kB",
+    "PIDs": "244"
+  },
+  {
+    "wall_time": 1793173980.6616113,
+    "BlockIO": "0B / 0B",
+    "CPUPerc": "232.69%",
+    "Container": "cele-simulation-1",
+    "ID": "a99970176adb",
+    "MemPerc": "11.36%",
+    "MemUsage": "886.7MiB / 7.623GiB",
+    "Name": "cele-simulation-1",
+    "NetIO": "1.07MB / 1.06MB",
+    "PIDs": "244"
+  },
+  {
+    "wall_time": 1793173986.815568,
+    "BlockIO": "0B / 0B",
+    "CPUPerc": "241.30%",
+    "Container": "cele-simulation-1",
+    "ID": "a99970176adb",
+    "MemPerc": "11.36%",
+    "MemUsage": "886.9MiB / 7.623GiB",
+    "Name": "cele-simulation-1",
+    "NetIO": "1.23MB / 1.23MB",
+    "PIDs": "244"
+  }
+]

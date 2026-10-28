@@ -1,0 +1,86 @@
+{
+  "scenario": "static",
+  "controller_profile": "dynamic",
+  "seed": 0,
+  "success": true,
+  "goals": [
+    {
+      "goal": [
+        -8,
+        6.6,
+        0
+      ],
+      "status": 4,
+      "error_code": 0,
+      "wall_s": 49.10049629800051,
+      "simulation_s": 49.101
+    },
+    {
+      "goal": [
+        8,
+        6.6,
+        0
+      ],
+      "status": 4,
+      "error_code": 0,
+      "wall_s": 48.350248950000605,
+      "simulation_s": 48.348
+    },
+    {
+      "goal": [
+        0,
+        6.6,
+        0
+      ],
+      "status": 4,
+      "error_code": 0,
+      "wall_s": 35.600321877999704,
+      "simulation_s": 35.601
+    },
+    {
+      "goal": [
+        0,
+        -6.5,
+        0
+      ],
+      "status": 4,
+      "error_code": 0,
+      "wall_s": 46.000467797000056,
+      "simulation_s": 46.00200000000001
+    },
+    {
+      "goal": [
+        8,
+        0,
+        0
+      ],
+      "status": 4,
+      "error_code": 0,
+      "wall_s": 39.35029159000078,
+      "simulation_s": 39.351
+    },
+    {
+      "goal": [
+        8,
+        -6.5,
+        0
+      ],
+      "status": 4,
+      "error_code": 0,
+      "wall_s": 28.350325123999937,
+      "simulation_s": 28.349999999999994
+    }
+  ],
+  "error": null,
+  "samples": 2468,
+  "path_length_m": 70.5397962373723,
+  "minimum_estimated_footprint_clearance_m": 0.23771219207158978,
+  "contact_events": 0,
+  "contact_messages_received": 0,
+  "stopped_sim_s": 11.70299999999995,
+  "slowing_sim_s": 47.331000000000145,
+  "moving_sim_s": 234.99600000000004,
+  "recovery_count": 0,
+  "contact_measurement": "Robot contact sensors plus conservative ground-truth footprint geometry; contact probe required for validation.",
+  "perception_messages": 0
+}

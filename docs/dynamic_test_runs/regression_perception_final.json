@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "camera_messages": 47,
+  "detection_messages": 26,
+  "distinct_person_frames": 25,
+  "matched_image_detection_annotation_stamps": 22,
+  "valid_camera_info": true,
+  "base_to_optical_tf": true,
+  "median_inference_ms": 45.21,
+  "latest_metrics": {
+    "device": "cpu",
+    "received": 98,
+    "processed": 47,
+    "source_stamp_s": 25.8,
+    "source_sequence": 95,
+    "latency_ms": 46.01,
+    "observed_output_hz": 1.49,
+    "frame_id": "camera_rgb_optical_frame",
+    "detections": [
+      {
+        "class": "person",
+        "score": 0.8538165092468262,
+        "xyxy": [
+          335.1725158691406,
+          7.415208339691162,
+          405.3103942871094,
+          258.8529357910156
+        ]
+      }
+    ]
+  },
+  "observation_wall_time_s": 15.0
+}

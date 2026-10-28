@@ -26,6 +26,7 @@ class YoloDetector(Node):
         self.declare_parameter('confidence', 0.35)
         self.declare_parameter('image_size', 416)
         self.declare_parameter('device', 'auto')
+        self.declare_parameter('output_dir', '/workspace/log/perception')
         weights = Path(self.get_parameter('weights').value)
         weights.parent.mkdir(parents=True, exist_ok=True)
         torch.set_num_threads(2)
@@ -41,7 +42,7 @@ class YoloDetector(Node):
         self.last_submitted = -1
         self.started = time.monotonic()
         self.best_person_score = 0.0
-        self.output = Path('/workspace/log/perception')
+        self.output = Path(self.get_parameter('output_dir').value)
         self.output.mkdir(parents=True, exist_ok=True)
         self.detections = self.create_publisher(Detection2DArray, '/perception/detections', 10)
         self.annotated = self.create_publisher(Image, '/perception/annotated', 2)
@@ -117,6 +118,7 @@ class YoloDetector(Node):
         self.annotated.publish(image)
         self.processed += 1
         metrics = {'device': self.device, 'received': self.received, 'processed': self.processed,
+                   'source_stamp_s': source.header.stamp.sec + source.header.stamp.nanosec / 1e9,
                    'source_sequence': sequence, 'latency_ms': round(latency, 2),
                    'observed_output_hz': round(self.processed / (time.monotonic() - self.started), 3),
                    'frame_id': source.header.frame_id, 'detections': boxes}

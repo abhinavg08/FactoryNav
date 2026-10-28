@@ -28,5 +28,7 @@ robot descriptions, simulator assets, maps, or algorithms is claimed.
   by Marina Kollmitz was created with MakeHuman and is distributed through OSRF's
   [CC-BY-3.0 model repository](https://creativecommons.org/licenses/by/3.0/).
   Meshes and textures are cached without modification;
-  the simulation instance is made static and positioned for the camera probe.
+  the original camera probe uses a static instance. Advanced traffic attaches
+  the same mesh to a velocity-controlled, collision-enabled rigid human proxy;
+  it translates and turns without an animated walking gait.
   `setup/person_assets.lock.json` pins source revision and asset checksums.

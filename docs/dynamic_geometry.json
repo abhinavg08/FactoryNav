@@ -1,0 +1,19 @@
+{
+  "static_map_checks": {
+    "loading": true,
+    "assembly": true,
+    "cnc": true,
+    "quality": true,
+    "storage": true,
+    "packing": true,
+    "delivery": true
+  },
+  "loading_assembly_alternative_after_outer_corridor_block": true,
+  "conservative_connectivity_radius_m": 0.31,
+  "note": "Geometric checks, not executed navigation results.",
+  "sha256": {
+    "factorynav_bringup/config/dynamic_scene.json": "59c5973a547cb58151129cdb10bdd7fc35d66b95beb25597cef23c683226ba24",
+    "factorynav_bringup/worlds/dynamic_factory.sdf": "03579ca388b70174280071f6daf35bc483a32702c92b6421d858e8693b1bd444",
+    "factorynav_bringup/maps/dynamic_factory.pgm": "4dfba856e0afffa68beef31b692c73494d3b710336b9d9c5f11ad2acfaaf403b"
+  }
+}

@@ -1,0 +1,43 @@
+Traceback (most recent call last):
+  File "/workspace/factorynav_dynamic/factorynav_dynamic/benchmark.py", line 297, in main
+    node.ready()
+  File "/workspace/factorynav_dynamic/factorynav_dynamic/benchmark.py", line 165, in ready
+    if not self.spin_until(lambda:self.robot is not None and self.scan_count>3 and self.tf_buffer.can_transform('map','base_link',rclpy.time.Time()),90):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/factorynav_dynamic/factorynav_dynamic/navigation_io.py", line 102, in spin_until
+    rclpy.spin_once(self, timeout_sec=0.1)
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 226, in spin_once
+    executor.spin_once(timeout_sec=timeout_sec)
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 926, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 907, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 877, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 781, in _wait_for_ready_callbacks
+    wait_set.wait(timeout_nsec)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspace/factorynav_dynamic/factorynav_dynamic/benchmark.py", line 329, in <module>
+    if __name__=='__main__': raise SystemExit(main())
+                                              ^^^^^^
+  File "/workspace/factorynav_dynamic/factorynav_dynamic/benchmark.py", line 321, in main
+    result=node.finish({'scenario':args.scenario,'controller_profile':args.profile,'seed':args.seed,'traffic_configuration':original_config},error)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/factorynav_dynamic/factorynav_dynamic/benchmark.py", line 262, in finish
+    'advertised_cmd_vel_publishers':{bytes(p.endpoint_gid).hex():p.node_name for p in self.get_publishers_info_by_topic('/cmd_vel')},
+                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/node.py", line 2246, in get_publishers_info_by_topic
+    return self._get_info_by_topic(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/node.py", line 2217, in _get_info_by_topic
+    info_dicts = func(self.handle, fq_topic_name, no_mangle)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+rclpy._rclpy_pybind11.RCLError: Failed to get information by topic for publishers: rcl node's context is invalid, at ./src/rcl/node.c:404

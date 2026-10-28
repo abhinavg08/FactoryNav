@@ -1,0 +1,64 @@
+{
+  "scenario": "contact_probe",
+  "controller_profile": "dynamic",
+  "seed": 0,
+  "traffic_configuration": [
+    {
+      "name": "human_b",
+      "kind": "human",
+      "route": [
+        [
+          -5.5,
+          0
+        ],
+        [
+          -8.5,
+          0
+        ]
+      ],
+      "speed": 0.22,
+      "delay": 0,
+      "loop": false
+    }
+  ],
+  "success": true,
+  "navigation_success": false,
+  "safety_pass": false,
+  "goals": [],
+  "error": null,
+  "samples": 192,
+  "path_length_m": 1.7691199506863395,
+  "minimum_estimated_footprint_clearance_m": -0.09232763385657697,
+  "contact_events": 1,
+  "contact_messages_received": 36264,
+  "stopped_sim_s": 10.302,
+  "slowing_sim_s": 8.799,
+  "moving_sim_s": 8.799,
+  "recovery_count": 0,
+  "near_agent_stopped_sim_s": 10.302,
+  "near_agent_progress_m": 1.7691199506863395,
+  "near_agent_duration_sim_s": 19.101000000000003,
+  "longest_near_agent_stop_s": 5.502,
+  "minimum_agent_footprint_clearance_m": -0.09232763385657697,
+  "interactions": {
+    "human_b": {
+      "agent_travel_m": 2.913099311549531,
+      "relative_x_order_changed": false,
+      "maximum_robot_lateral_offset_m": 0.0014228452704536237
+    }
+  },
+  "sensor_validation": {
+    "human_b": {
+      "lidar_observed_samples": 22,
+      "lethal_costmap_samples": 0,
+      "clearing_observations": 0
+    }
+  },
+  "continuous_passing_evidence": false,
+  "contact_measurement": "Gazebo contact messages and conservative ground-truth oriented rectangle/circle clearances sampled at 10 Hz. Isolated contact_probe validates sensor transport.",
+  "perception_messages": 0,
+  "person_detection_frames": 0,
+  "maximum_person_confidence": null,
+  "median_inference_ms": null,
+  "host_elapsed_s": 28.921999999991385
+}

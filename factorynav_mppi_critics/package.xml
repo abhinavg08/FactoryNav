@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>factorynav_mppi_critics</name><version>0.2.0</version>
+  <description>Time-indexed LiDAR obstacle motion critic for Nav2 Jazzy MPPI.</description>
+  <maintainer email="codex@openai.com">FactoryNav AI contributors</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>nav2_mppi_controller</depend><depend>rclcpp</depend>
+  <depend>rclcpp_lifecycle</depend><depend>pluginlib</depend><depend>sensor_msgs</depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

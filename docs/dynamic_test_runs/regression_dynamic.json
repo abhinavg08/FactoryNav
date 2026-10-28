@@ -1,0 +1,48 @@
+{
+  "goal": {
+    "x": 4.5,
+    "y": 0.0,
+    "yaw": 0.0
+  },
+  "success": true,
+  "phase": "complete",
+  "lifecycle": {
+    "amcl": "active",
+    "map_server": "active",
+    "planner_server": "active",
+    "controller_server": "active",
+    "bt_navigator": "active"
+  },
+  "obstacle_spawn": {
+    "success": true,
+    "name": "unexpected_obstacle",
+    "x": 0.0,
+    "y": 0.0,
+    "size_m": [
+      0.7,
+      2.2,
+      1.0
+    ],
+    "response": "data: true",
+    "stderr": ""
+  },
+  "obstacle_spawn_wall_time_s": 3.656,
+  "obstacle_spawn_odom_travel_m": 1.002,
+  "completion_wall_time_s": 45.203,
+  "action_status": 4,
+  "nav2_error_code": 0,
+  "unexpected_obstacle_scenario_passed": true,
+  "scan_messages": 244,
+  "odom_messages": 1350,
+  "global_plan_messages": 45,
+  "amcl_pose_messages": 62,
+  "observed_odom_path_length_m": 14.543,
+  "minimum_observed_lidar_range_m": 0.795,
+  "map_to_base_link": 1,
+  "odom_to_base_link": 1,
+  "simulation_time_s": 48.711,
+  "maximum_abs_global_plan_y_m": 4.0,
+  "maximum_abs_odom_y_m": 4.052,
+  "unexpected_obstacle_spawned": true,
+  "unexpected_obstacle_marked_in_global_costmap": true
+}

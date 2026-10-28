@@ -20,3 +20,17 @@ The initial lifecycle precheck failure is preserved in
 submitted. The corrected checker and successful retry are recorded separately.
 Timeouts request goal cancellation. Use fresh project containers for repeatable
 starting coordinates and avoid Gazebo's in-place time reset during tests.
+
+## Advanced-mode diagnostics
+
+| Symptom | Verified cause / remedy |
+|---|---|
+| Headless Gazebo fails while opening a temporary xacro world | The upstream launch raced temporary world creation. The advanced launch starts Gazebo directly on its generated SDF, then reuses the robot/Nav2 bringup. |
+| Humans appear in LiDAR but not the local costmap | An omitted per-source maximum obstacle height rejected all returns. The advanced scan source explicitly allows 0–2 m. Verify actual marking in `sensor_observations.jsonl`. |
+| Contact topic exists but no robot/actor collision is reported | Gazebo's contact topic must be configured inside `<contact>`. The isolated contact probe validates actual transport and physical robot displacement. |
+| Close cart fit suddenly rotates and reports lateral motion | Adjacent-ray direction averaging was noisy. The selected fitter uses whole-cluster boundary residuals; keep the box-size priors matched to the equipment. Earlier failed trials are retained. |
+| A scenario directory already exists | The runner intentionally refuses to overwrite evidence. Use a new name or `--resume` for completed runs with matching source hashes. Archive an interrupted run before rerunning it. |
+| noVNC unavailable during tests | Headless trials run the sensor renderer without the desktop/websocket server. Start the advanced GUI launcher after the test suite finishes. |
+
+Logs for advanced mode are under `log/dynamic/`; completed experiments copy
+their own logs and effective parameters into `docs/dynamic_test_runs/`.

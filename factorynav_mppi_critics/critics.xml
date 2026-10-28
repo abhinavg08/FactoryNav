@@ -1,0 +1,7 @@
+<class_libraries>
+  <library path="factorynav_dynamic_critic">
+    <class type="mppi::critics::DynamicObstacleCritic" base_class_type="mppi::critics::CriticFunction">
+      <description>Scores robot trajectories against same-time constant-velocity LiDAR obstacles.</description>
+    </class>
+  </library>
+</class_libraries>

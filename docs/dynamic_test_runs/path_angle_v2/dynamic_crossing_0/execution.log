@@ -1,0 +1,87 @@
+{"goal": [5, 0, 0], "status": 4, "error_code": 0, "recoveries": 0, "wall_s": 37.69969831900016, "simulation_s": 36.939}
+{
+  "scenario": "crossing",
+  "controller_profile": "dynamic",
+  "seed": 0,
+  "traffic_configuration": [
+    {
+      "name": "human_a",
+      "kind": "human",
+      "route": [
+        [
+          0,
+          -1.8
+        ],
+        [
+          0,
+          1.8
+        ]
+      ],
+      "speed": 0.25,
+      "delay": 6,
+      "loop": true
+    }
+  ],
+  "success": true,
+  "navigation_success": true,
+  "safety_pass": true,
+  "goals": [
+    {
+      "goal": [
+        5,
+        0,
+        0
+      ],
+      "status": 4,
+      "error_code": 0,
+      "recoveries": 0,
+      "wall_s": 37.69969831900016,
+      "simulation_s": 36.939
+    }
+  ],
+  "error": null,
+  "samples": 379,
+  "path_length_m": 10.105319058225996,
+  "minimum_estimated_footprint_clearance_m": 0.3631323331292975,
+  "contact_events": 0,
+  "contact_messages_received": 54210,
+  "stopped_sim_s": 1.701,
+  "slowing_sim_s": 9.99300000000001,
+  "moving_sim_s": 36.099000000000004,
+  "recovery_count": 0,
+  "near_agent_stopped_sim_s": 0.9000000000000021,
+  "near_agent_progress_m": 4.883239991177524,
+  "near_agent_duration_sim_s": 19.700999999999997,
+  "longest_near_agent_stop_s": 0.6000000000000014,
+  "minimum_agent_footprint_clearance_m": 0.3631323331292975,
+  "interactions": {
+    "human_a": {
+      "agent_travel_m": 6.949009489683094,
+      "relative_x_order_changed": true,
+      "maximum_robot_lateral_offset_m": 0.2053452198483468,
+      "reentered_vacated_agent_footprint": {
+        "earlier_sim_s": 17.4,
+        "reentry_sim_s": 24.6,
+        "location": [
+          -2.7894353493707075e-18,
+          0.13298520000003727
+        ]
+      }
+    }
+  },
+  "sensor_validation": {
+    "human_a": {
+      "lidar_observed_samples": 75,
+      "lethal_costmap_samples": 48,
+      "clearing_observations": 3
+    }
+  },
+  "clearance_margin_0_08m_pass": true,
+  "angular_command_sign_changes_over_0_25rad_s": 1,
+  "continuous_passing_evidence": false,
+  "contact_measurement": "Gazebo contact messages and conservative ground-truth oriented rectangle/circle clearances sampled at 10 Hz. Isolated contact_probe validates sensor transport.",
+  "perception_messages": 0,
+  "person_detection_frames": 0,
+  "maximum_person_confidence": null,
+  "median_inference_ms": null
+}

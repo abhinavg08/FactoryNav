@@ -1,0 +1,23 @@
+[
+  {
+    "sim_s": 26.916,
+    "collisions": [
+      "human_b::body::traffic_collision",
+      "turtlebot3_waffle::wheel_left_link::wheel_left_collision"
+    ],
+    "depths": [
+      0.00010609541130327245
+    ]
+  },
+  {
+    "sim_s": 28.692,
+    "collisions": [
+      "human_b::body::traffic_collision",
+      "turtlebot3_waffle::base_link::base_collision"
+    ],
+    "depths": [
+      0.00010685386311720668,
+      0.00010685386311723444
+    ]
+  }
+]

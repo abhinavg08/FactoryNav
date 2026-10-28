@@ -1,32 +1,78 @@
-# Planned 90-second demo
+# 105-second recording plan
 
-The core navigation and camera-perception scenarios passed. This is the recording
-plan; no demo video exists yet. Demo video link: pending recording/publication.
+No final MP4 is included. Record actual simulation footage with these commands
+and edit clearly labeled clips. Never present separated experiments as one
+continuous mission. Keep the final video under two minutes.
 
-| Time | Planned view and narration |
-| --- | --- |
-| 0:00–0:15 | Keep Gazebo and RViz visible together. Identify the robot, factory layout, map, and LiDAR scan. |
-| 0:15–0:25 | Send the Loading → Workstation B goal with automatic blockage insertion after 1 m. Show the initial path, motion, and red obstacle. |
-| 0:25–1:05 | Show costmap marking, the detour around the rack ends, and successful arrival. Actual repeated goals took about 45 seconds. |
-| 1:05–1:25 | Show a clearly labeled separate clean perception probe: the textured person, real annotated camera stream, and measured CPU inference. State that YOLO does not control velocity. |
-| 1:25–1:30 | Show the recorded success/result table and repository. State the semantic-control and CUDA limitations. |
+1. Start the GUI: `./scripts/run_demo.ps1 -DynamicFactory -Perception`.
+   Open `http://localhost:6080/vnc.html?autoconnect=1&resize=scale`. Wait for
+   Gazebo, RViz, both humans and the cart. The left/right desktop layout is
+   configured by Gazebo's explicit window size and Openbox. RViz fits the
+   whole map. If the noVNC page was already open, reload it. A real prepared
+   view is saved as `media/dynamic_factory_gui.jpg`.
+2. In OBS, create a 1600 × 900 scene. Add Window Capture for the browser or
+   Codex window displaying noVNC, crop to the remote desktop, and fit to canvas.
+   Use 30 fps, an H.264 encoder supported by the local installation, and MKV
+   recording. Use OBS File → Remux Recordings to export MP4 after capture.
+   A Windows application-window recording is also usable if OBS is unavailable.
+3. Use the tested benchmark commands below to obtain the individual clips.
+   Each test resets Gazebo; reload noVNC when the new desktop is ready. Start
+   recording before launching the test, since actors move as soon as its
+   sensor/localization checks pass. Keep unedited originals with test logs.
 
-## Recording from Windows
+```powershell
+# Separate head-on clip with real LiDAR control and YOLO observations
+.\.conda\python.exe scripts/test_dynamic_scenarios.py --scenarios head_on --repeat 1 --gui --perception --keep --output docs/dynamic_test_runs/recording_head_on
 
-1. Start the tested simulation and open the local noVNC desktop. Arrange Gazebo
-   and RViz side by side, with their titles visible and the robot in view.
-2. In an installed OBS Studio, create a Display Capture or Window Capture source
-   for that desktop/browser. Choose 1920×1080 or 1600×900, 30 fps, and MKV output.
-3. Run one rehearsal using the exact commands and starting state from the final
-   verified setup. Restart the project simulation for a clean take. Start the
-   world before recording, then use `send_goal.py --obstacle-after-m 1.0` for
-   the mission rather than the reset-performing test launcher.
-4. Start recording, perform the sequence, stop recording, and use OBS's Remux
-   Recordings command to produce an MP4 if required by the submission.
-5. Review the entire file for readable UI and genuine action-result evidence.
-   Add a public link only after the user authorizes publishing.
+# Separate crossing cart clip
+.\.conda\python.exe scripts/test_dynamic_scenarios.py --scenarios cart --repeat 1 --gui --perception --keep --output docs/dynamic_test_runs/recording_cart
 
-The person probe uses a separate clean run so the person does not overlap the
-central blockage. Label that cut clearly. Use concise captions and describe
-YOLO as a perception layer. Do not substitute invented telemetry or imply that
-YOLO caused the demonstrated LiDAR/Nav2 detour.
+# Actual Loading → Assembly → Quality → Delivery mission; all agents remain active
+.\.conda\python.exe scripts/test_dynamic_scenarios.py --scenarios full --repeat 1 --gui --perception --keep --output docs/dynamic_test_runs/recording_mission
+```
+
+Choose new output directory names for additional captures; the runner refuses
+to overwrite previous evidence. GUI rendering may reduce simulation real-time
+factor. Use simulation timestamps in the logs when explaining navigation time.
+
+| Video time | Actual content | Caption |
+|---|---|---|
+| 0:00–0:15 | Wide factory view, labeled map, visibly moving humans/cart | ROS 2 Jazzy · Gazebo Harmonic · Nav2 |
+| 0:15–0:40 | Head-on approach, lateral maneuver, separation and continued progress | Head-on test · real LiDAR and MPPI |
+| 0:40–1:00 | Cart crossing the intended route, changing costmap and robot trajectory | Separate crossing-cart experiment |
+| 1:00–1:30 | Selected portions of the full mission and live YOLO annotations | Mission excerpt · label any speed-up |
+| 1:30–1:45 | Real action success and saved result table | Measured trials; include failures/limitations in linked report |
+
+Show RViz's map, robot, global path, local costmap, and scan. Enable only the
+displays needed for the clip. YOLO's annotated image is available on
+`/perception/annotated`; add an RViz Image display with that topic if it is not
+already visible. For a short MPPI visualization session, use
+`./scripts/run_demo.ps1 -DynamicFactory -Perception -DebugTrajectories`.
+Leave it disabled for benchmarks. This launcher configures the single world;
+do not start a second ROS/Gazebo launch. Candidate robot trajectories are not
+predictions of human intent.
+
+For a larger camera close-up, enlarge or undock RViz's annotated-image panel,
+or use the existing image viewer:
+
+```powershell
+docker compose exec -d simulation bash -lc 'source /opt/ros/jazzy/setup.bash; DISPLAY=:99 ros2 run rqt_image_view rqt_image_view /perception/annotated'
+```
+
+Keep the raw full-mission recording, then cut the close-up into the labeled
+YOLO segment. The saved `media/dynamic_yolo26_person.png` is an actual still
+from the verified single-human moving-camera trial, not a video clip.
+
+The cyan point cloud, when visible, previews two seconds of constant-velocity
+obstacle motion from LiDAR clusters. It is visual only; the MPPI critic uses
+time-indexed motion estimates rather than adding future points to costmaps.
+Label the preview separately from the actual scan and camera detections.
+
+Use this narration only over the demonstrated behavior: “The robot transports
+materials between manufacturing stations. LiDAR updates its costmaps as people
+and carts move through the factory. Nav2 selects feasible trajectories, and
+the robot continues toward its destination. YOLO26 provides a separate live
+person-detection view.”
+
+Finish with `docker compose down`. Inspect `docker compose ps` to ensure no
+duplicate simulation remains.

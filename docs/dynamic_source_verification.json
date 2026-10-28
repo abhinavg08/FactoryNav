@@ -1,0 +1,11 @@
+{
+  "runs_checked": 20,
+  "controller_and_actor_sources_match": true,
+  "benchmark_launch_snapshot_sha256": "5052ea0d6ecd4393addb2b44e990584d7d105c758d721ed0aca8dee82e51a7c7",
+  "mismatches": [],
+  "final_gui_nav2_params_match_full_benchmark": true,
+  "note": "Final launch differs only in GUI window configuration and RViz zoom; the recorded launch is preserved verbatim. No evidence hashes were rewritten.",
+  "source_bundle": "dynamic_test_runs/validation/benchmark_sources.zip",
+  "source_bundle_sha256": "a4d924eb148e959c9033048a8b20a7b6acae9144cc85f7731c7540303dd6f4e6",
+  "bundle_preserves_original_source_bytes_and_line_endings": true
+}
