@@ -35,6 +35,8 @@ Both PNGs are generated from the project's actual scene/map geometry. Dashed lin
 
 ## The project
 
+Created and maintained by **[Abhinav Reddy](https://github.com/abhinavg08)**.
+
 FactoryNav moves a simulated TurtleBot3 Waffle between factory stations while handling fixed equipment, newly introduced blockages and independently moving traffic. The original factory provides a simple, reproducible starting point. The advanced factory adds LiDAR motion estimation and a native C++ MPPI critic that scores the robot and obstacles at matching future times.
 
 The engineering focus is measurable behaviour: successful actions, footprint clearance, physical contacts, sensor observations, stopped time, recoveries and resource use. Saved development failures accompany the accepted trials.
@@ -221,7 +223,7 @@ The desktop is bound to `127.0.0.1`; do not expose its unauthenticated VNC servi
 | [`docs/`](docs/) | Setup, architecture, results, comparison and evidence index |
 | [`media/`](media/) | Actual maps, desktop screenshot, measured trajectory plot and camera frames |
 
-The original implementation remains in Git history at `c342a41` and on [`baseline/original-factory`](https://github.com/abhinavg08/factorynav/tree/baseline/original-factory). The advanced validated implementation is `48c859d`. Publication changes retain both commits and the benchmark evidence.
+The original implementation remains in Git history at `86974d8` and on [`baseline/original-factory`](https://github.com/abhinavg08/factorynav/tree/baseline/original-factory). The advanced validated implementation is `29bd855`. The baseline and advanced file trees are preserved; commit author metadata was corrected to the project owner during publication. The untouched pre-correction history is also backed up locally. Benchmark evidence is unchanged.
 
 ## Limitations
 

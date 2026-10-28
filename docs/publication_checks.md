@@ -1,6 +1,6 @@
 # Publication verification
 
-The portfolio preparation preserves the original robotics packages and recorded benchmark files. It improves presentation, active setup instructions and file selection. The host scenario runner now discovers the simulation container through Compose instead of assuming a checkout-specific container name. Historical logs retain their original names and paths.
+The portfolio preparation preserves the original robotics logic, runtime configuration and recorded benchmark files. It improves presentation, active setup instructions and file selection. The host scenario runner now discovers the simulation container through Compose instead of assuming a checkout-specific container name. Historical logs retain their original names and paths.
 
 Checks completed during publication preparation:
 
@@ -17,9 +17,18 @@ Checks completed during publication preparation:
 | Geometry checks | All eight Python unit tests passed |
 | Compose portability | Base, advanced and advanced/perception configurations resolved successfully from a checkout path containing spaces; loopback port binding retained |
 | External documentation | 28 unique documentation/badge URLs responded successfully after outdated links were corrected |
-| GitHub Markdown | README accepted by GitHub's rendering API, retaining the two-map table and Mermaid enrichment container |
-| Diff integrity | No robotics package or recorded benchmark file modified; no whitespace errors |
+| Public GitHub rendering | Both map PNGs loaded side by side; all 13 README images/badges loaded; architecture rendered as a 16-node Mermaid SVG; command blocks displayed |
+| Diff integrity | Navigation/perception logic, runtime configuration and recorded benchmark files unchanged; ROS manifest maintainer fields identify the owner |
 
 No lengthy simulation matrix or fresh network image rebuild was performed for presentation changes. Navigation claims refer to the already-recorded experiments, not new trials. Apt dependencies are not fully frozen, and a future fresh install may require revalidation. See the [setup guide](setup.md) and [detailed limitations](dynamic_navigation_results.md).
 
 Run `python scripts/check_repository.py --history` to repeat the local publication checks. The scanner checks known credential forms and is not a guarantee that every possible secret can be recognized. Runtime environments, downloaded assets, build products and uncurated local reruns are ignored. The demo video is excluded from the repository.
+
+## Owner attribution
+
+The project owner authorized correcting commit author/committer metadata to
+Abhinav Reddy after the initial publication. All three corrected historical
+commits have identical file trees and messages to their originals. An untouched
+Git bundle is retained locally outside the publication set. The baseline branch
+continues to preserve the original factory snapshot. ROS maintainer fields and
+the current project copyright identify the owner; upstream attributions remain.

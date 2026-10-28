@@ -2,7 +2,7 @@
 <package format="3">
   <name>factorynav_mppi_critics</name><version>0.2.0</version>
   <description>Time-indexed LiDAR obstacle motion critic for Nav2 Jazzy MPPI.</description>
-  <maintainer email="codex@openai.com">FactoryNav AI contributors</maintainer>
+  <maintainer email="abhinavreddyg08@gmail.com">Abhinav Reddy</maintainer>
   <license>MIT</license>
   <buildtool_depend>ament_cmake</buildtool_depend>
   <depend>nav2_mppi_controller</depend><depend>rclcpp</depend>

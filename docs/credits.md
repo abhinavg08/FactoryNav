@@ -1,5 +1,8 @@
 # Credits and references
 
+FactoryNav is created and maintained by [Abhinav Reddy](https://github.com/abhinavg08).
+The upstream acknowledgements below identify dependencies and assets.
+
 This repository's original scripts and configuration use the root MIT license.
 Installed dependencies retain their own licenses. No ownership of third-party
 robot descriptions, simulator assets, maps, or algorithms is claimed.

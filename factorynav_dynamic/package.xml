@@ -2,7 +2,7 @@
 <package format="3">
   <name>factorynav_dynamic</name><version>0.2.0</version>
   <description>Independent factory traffic and measured Nav2 experiments.</description>
-  <maintainer email="codex@openai.com">FactoryNav AI contributors</maintainer>
+  <maintainer email="abhinavreddyg08@gmail.com">Abhinav Reddy</maintainer>
   <license>MIT</license>
   <buildtool_depend>ament_python</buildtool_depend>
   <exec_depend>rclpy</exec_depend><exec_depend>geometry_msgs</exec_depend>

@@ -3,7 +3,7 @@
   <name>factorynav_bringup</name>
   <version>0.1.0</version>
   <description>Factory world, matching map, and Nav2 TurtleBot3 launch.</description>
-  <maintainer email="codex@openai.com">FactoryNav AI contributors</maintainer>
+  <maintainer email="abhinavreddyg08@gmail.com">Abhinav Reddy</maintainer>
   <license>MIT</license>
   <buildtool_depend>ament_cmake</buildtool_depend>
   <exec_depend>nav2_bringup</exec_depend>

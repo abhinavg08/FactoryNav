@@ -3,7 +3,7 @@
   <name>factorynav_perception</name>
   <version>0.1.0</version>
   <description>Latest-frame YOLO26 detector for Gazebo RGB images.</description>
-  <maintainer email="codex@openai.com">FactoryNav AI contributors</maintainer>
+  <maintainer email="abhinavreddyg08@gmail.com">Abhinav Reddy</maintainer>
   <license>MIT</license>
   <buildtool_depend>ament_python</buildtool_depend>
   <exec_depend>rclpy</exec_depend>
