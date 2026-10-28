@@ -33,10 +33,12 @@ def run_case(scenario,profile,seed,root,perception=False,gui=False,keep=False):
     startup=subprocess.run(compose+['up','-d','--no-build','--force-recreate'],cwd=ROOT,env=env,capture_output=True,text=True)
     (out/'startup.log').write_text(startup.stdout+startup.stderr)
     if startup.returncode: raise RuntimeError(startup.stderr)
+    container=subprocess.run(compose+['ps','-q','simulation'],cwd=ROOT,env=env,capture_output=True,text=True,check=True).stdout.strip()
+    if not container: raise RuntimeError('Compose did not return the simulation container ID')
     samples=[]; done=threading.Event()
     def resources():
         while not done.is_set():
-            stats=subprocess.run(['docker','stats','--no-stream','--format','{{json .}}','cele-simulation-1'],capture_output=True,text=True)
+            stats=subprocess.run(['docker','stats','--no-stream','--format','{{json .}}',container],capture_output=True,text=True)
             try: samples.append({'wall_time':time.time(),**json.loads(stats.stdout)})
             except (ValueError,TypeError): pass
             done.wait(5)

@@ -1,4 +1,8 @@
-# FactoryNav AI 2.0 completed checkpoint
+# Historical implementation checkpoint
+
+This file records the pre-publication implementation state. Use the current
+[README](../README.md) and [setup guide](setup.md) for reproducible commands;
+runtime descriptions below are historical observations, not current process status.
 
 Implementation and validation are complete on `feature/dynamic-factory-navigation`.
 The original baseline remains on `main` at `c342a41`. Host tooling uses the local

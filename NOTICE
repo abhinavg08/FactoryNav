@@ -1,0 +1,16 @@
+FactoryNav
+Original project code is provided under the MIT license in LICENSE.
+
+Third-party components are not relicensed by this repository:
+- ROS 2 and Navigation2: upstream component licenses, including Apache-2.0.
+- Gazebo, TurtleBot3, and their installed simulation assets: upstream licenses.
+- Ultralytics YOLO26 code and downloaded pretrained models: upstream
+  AGPL-3.0 terms or a separately obtained applicable commercial license.
+- Standing-person model: Marina Kollmitz, created with MakeHuman, via
+  OSRF gazebo_models, CC-BY-3.0. Meshes and textures are not redistributed
+  here; their appearance is visible in attributed simulation screenshots.
+  Advanced traffic attaches the unmodified mesh to a custom rigid proxy.
+
+See docs/credits.md and setup/person_assets.lock.json for sources,
+attribution, revisions and checksums. The root MIT license is not a claim
+that the complete optional perception runtime has only MIT obligations.

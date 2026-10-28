@@ -1,6 +1,6 @@
 # Advanced mode commands
 
-Use PowerShell in `D:\cele`. The local `.conda` is for host tooling; ROS runs
+Use PowerShell in the root of your cloned `factorynav` directory. The local `.conda` is for host tooling; ROS runs
 inside the Docker image. The original README documents base/perception image
 builds and the attributed model/weight caches. On a new checkout, populate the
 person cache with `.\.conda\python.exe setup/fetch_person.py` before advanced

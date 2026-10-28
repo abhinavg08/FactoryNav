@@ -2,7 +2,7 @@
 
 | Symptom | Investigation and remedy |
 | --- | --- |
-| Conda is not on PATH | Dot-source `setup/activate.ps1`; it uses the existing `D:\ana3` shell hook without changing the user's profile. |
+| Conda is not on PATH | Use a Conda PowerShell prompt or pass `-CondaExe` to `setup/create_env.ps1` and `setup/activate.ps1`. Discovery uses the shell, environment, PATH and common installation directories; no profile changes are made. |
 | WSL is Ubuntu 26.04 | Use the supplied Ubuntu 24.04 container. Do not mix Noble apt repositories into Ubuntu 26.04 or replace its Python. |
 | Docker engine unavailable | Run `docker desktop start`, wait for startup, then check `docker info`. Linux containers are required. |
 | WSLg mount fails | The audit found a missing Ubuntu distro-service socket. The local virtual desktop avoids that mount; `log/opengl.txt` records its actual renderer. |
@@ -16,7 +16,7 @@
 | Slow or inconsistent wheel index | The optional-image helper downloads pinned wheels from official PyPI, verifies hashes, and installs the resulting local cache. |
 
 The initial lifecycle precheck failure is preserved in
-`docs/test_runs/baseline_goal.json`; it occurred before any navigation goal was
+[`test_runs/baseline_goal.json`](test_runs/baseline_goal.json); it occurred before any navigation goal was
 submitted. The corrected checker and successful retry are recorded separately.
 Timeouts request goal cancellation. Use fresh project containers for repeatable
 starting coordinates and avoid Gazebo's in-place time reset during tests.

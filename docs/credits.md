@@ -11,7 +11,7 @@ robot descriptions, simulator assets, maps, or algorithms is claimed.
   control, and recovery behavior.
 - [Nav2 minimal simulation](https://github.com/ros-navigation/nav2_minimal_turtlebot_simulation)
   supplies the compatible TurtleBot3 simulation and associated robot assets.
-- [ROBOTIS TurtleBot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/)
+- [ROBOTIS TurtleBot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)
   is the robot platform used by the upstream baseline.
 - [Gazebo Harmonic](https://gazebosim.org/docs/harmonic/) provides simulation
   and sensor generation, integrated with ROS by `ros_gz`.
@@ -32,3 +32,14 @@ robot descriptions, simulator assets, maps, or algorithms is claimed.
   the same mesh to a velocity-controlled, collision-enabled rigid human proxy;
   it translates and turns without an animated walking gait.
   `setup/person_assets.lock.json` pins source revision and asset checksums.
+
+## Distribution boundaries
+
+The root MIT license covers original FactoryNav code. It does not replace the
+AGPL-3.0 terms applicable to the optional Ultralytics runtime or downloaded
+models, nor the attribution requirements of the person model. Review those
+upstream terms for redistribution and deployment. The repository excludes
+downloaded weights, meshes, textures, wheels and container images. Rendered
+person imagery is attributed above and in [visual provenance](../media/README.md).
+The supplied fetch script retains an upstream license copy in the local cache.
+See also [NOTICE](../NOTICE).

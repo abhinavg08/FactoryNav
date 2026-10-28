@@ -10,3 +10,16 @@ __pycache__
 *.pt
 *.mp4
 *.mkv
+docs
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.mov
+*.webm
+*.avi
+*.m4v
+recordings
+videos

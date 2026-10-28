@@ -16,3 +16,45 @@ log/
 *.engine
 *.mp4
 *.mkv
+*.mov
+*.webm
+*.avi
+*.m4v
+*.gifv
+
+# Host environments, editors, credentials and local configuration
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+credentials*.json
+secrets*.json
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Uncurated experiments and ROS recordings. Previously committed evidence stays tracked.
+docs/dynamic_test_runs/*
+*.db3
+*.mcap
+*.bag
+rosbag2_*/
+recordings/
+videos/
+
+# Native and Python build artifacts
+*.egg-info/
+dist/
+*.so
+*.dll
+*.exe
