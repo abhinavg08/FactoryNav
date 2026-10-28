@@ -1,0 +1,32 @@
+# Credits and references
+
+This repository's original scripts and configuration use the root MIT license.
+Installed dependencies retain their own licenses. No ownership of third-party
+robot descriptions, simulator assets, maps, or algorithms is claimed.
+
+- [ROS 2 Jazzy](https://docs.ros.org/en/jazzy/) provides the middleware,
+  Python client library, transforms, lifecycle services, and actions.
+- [Navigation2](https://github.com/ros-navigation/navigation2/tree/jazzy),
+  Apache-2.0, supplies the baseline launch, localization, costmaps, planning,
+  control, and recovery behavior.
+- [Nav2 minimal simulation](https://github.com/ros-navigation/nav2_minimal_turtlebot_simulation)
+  supplies the compatible TurtleBot3 simulation and associated robot assets.
+- [ROBOTIS TurtleBot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/)
+  is the robot platform used by the upstream baseline.
+- [Gazebo Harmonic](https://gazebosim.org/docs/harmonic/) provides simulation
+  and sensor generation, integrated with ROS by `ros_gz`.
+- [Microsoft WSLg container guidance](https://github.com/microsoft/wslg/blob/main/samples/container/Containers.md)
+  describes display and vGPU mounts used during the graphics compatibility audit.
+- [Conda](https://docs.conda.io/projects/conda/en/stable/) and conda-forge
+  provide the project-local Windows Python tooling environment.
+- Xvfb, Openbox, x11vnc, noVNC, and websockify provide the local virtual desktop
+  fallback when direct WSLg mounting is unavailable.
+- [Ultralytics YOLO26](https://docs.ultralytics.com/models/yolo26/) supplies the
+  optional pretrained detector. Ultralytics retains its upstream
+  [AGPL-3.0 license](https://github.com/ultralytics/ultralytics/blob/main/LICENSE).
+- The [standing-person model](https://github.com/osrf/gazebo_models/tree/master/person_standing)
+  by Marina Kollmitz was created with MakeHuman and is distributed through OSRF's
+  [CC-BY-3.0 model repository](https://creativecommons.org/licenses/by/3.0/).
+  Meshes and textures are cached without modification;
+  the simulation instance is made static and positioned for the camera probe.
+  `setup/person_assets.lock.json` pins source revision and asset checksums.

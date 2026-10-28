@@ -1,0 +1,23 @@
+/factorynav_yolo
+  Subscribers:
+    /camera/image_raw: sensor_msgs/msg/Image
+    /clock: rosgraph_msgs/msg/Clock
+  Publishers:
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+    /perception/annotated: sensor_msgs/msg/Image
+    /perception/detections: vision_msgs/msg/Detection2DArray
+    /perception/metrics: std_msgs/msg/String
+    /rosout: rcl_interfaces/msg/Log
+  Service Servers:
+    /factorynav_yolo/describe_parameters: rcl_interfaces/srv/DescribeParameters
+    /factorynav_yolo/get_parameter_types: rcl_interfaces/srv/GetParameterTypes
+    /factorynav_yolo/get_parameters: rcl_interfaces/srv/GetParameters
+    /factorynav_yolo/get_type_description: type_description_interfaces/srv/GetTypeDescription
+    /factorynav_yolo/list_parameters: rcl_interfaces/srv/ListParameters
+    /factorynav_yolo/set_parameters: rcl_interfaces/srv/SetParameters
+    /factorynav_yolo/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
+  Service Clients:
+
+  Action Servers:
+
+  Action Clients:

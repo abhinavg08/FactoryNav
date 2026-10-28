@@ -1,0 +1,26 @@
+{
+  "goal": {
+    "x": 0.0,
+    "y": 1.7,
+    "yaw": 0.0
+  },
+  "success": false,
+  "phase": "localization",
+  "lifecycle": {
+    "amcl": "active",
+    "map_server": "active",
+    "planner_server": "active",
+    "controller_server": "active",
+    "bt_navigator": "inactive"
+  },
+  "error": "Nav2 lifecycle nodes not all active: {'amcl': 'active', 'map_server': 'active', 'planner_server': 'active', 'controller_server': 'active', 'bt_navigator': 'inactive'}",
+  "scan_messages": 14,
+  "odom_messages": 72,
+  "global_plan_messages": 0,
+  "amcl_pose_messages": 7,
+  "observed_odom_path_length_m": 0.0,
+  "minimum_observed_lidar_range_m": 0.472,
+  "map_to_base_link": 1,
+  "odom_to_base_link": 1,
+  "simulation_time_s": 27.09
+}

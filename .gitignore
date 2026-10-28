@@ -1,0 +1,18 @@
+# Local Conda environment and caches
+.conda/
+.cache/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+
+# ROS / colcon build products
+build/
+install/
+log/
+
+# Model weights and recordings
+*.pt
+*.onnx
+*.engine
+*.mp4
+*.mkv

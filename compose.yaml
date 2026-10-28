@@ -1,0 +1,17 @@
+services:
+  simulation:
+    image: factorynav-ai:jazzy
+    build:
+      context: .
+      dockerfile: setup/Dockerfile
+    init: true
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    ports:
+      - "127.0.0.1:6080:6080"
+    shm_size: 1gb
+    stop_grace_period: 20s
+    environment:
+      ROS_DOMAIN_ID: "26"
+    command: ["bash", "/workspace/scripts/run_demo.sh", "--factory", "--virtual-display"]

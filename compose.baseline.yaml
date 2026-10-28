@@ -1,0 +1,3 @@
+services:
+  simulation:
+    command: ["bash", "/workspace/scripts/run_demo.sh", "--baseline", "--virtual-display"]

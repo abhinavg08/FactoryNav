@@ -1,0 +1,12 @@
+.conda
+.cache/*
+!.cache/wheels/
+.git
+build
+install
+log
+media
+__pycache__
+*.pt
+*.mp4
+*.mkv

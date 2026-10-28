@@ -1,0 +1,9 @@
+services:
+  simulation:
+    image: factorynav-ai:perception
+    build:
+      context: .
+      dockerfile: setup/Dockerfile.perception
+    environment:
+      GZ_SIM_RESOURCE_PATH: /workspace/.cache/models
+    command: ["bash", "/workspace/scripts/run_demo.sh", "--factory", "--virtual-display", "--perception"]

@@ -1,0 +1,80 @@
+{
+  "opencv-python": {
+    "version": "4.11.0.86",
+    "filename": "opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "6b02611523803495003bd87362db3e1d2a0454a6a63025dc6658a9830570aa0d",
+    "url": "https://files.pythonhosted.org/packages/2c/8b/90eb44a40476fa0e71e05a0283947cfd74a5d36121a11d926ad6f3193cc4/opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+  },
+  "polars-runtime-32": {
+    "version": "2.1.0",
+    "filename": "polars_runtime_32-2.1.0-cp311-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "sha256": "0b838056cf365d7497971d9d9825c547766923338771c48c545b86ead2ebc572",
+    "url": "https://files.pythonhosted.org/packages/d2/e6/649c524252d32b24d0ba92278033823fa8e0040ee3748ce5afbeda107403/polars_runtime_32-2.1.0-cp311-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+  },
+  "ultralytics": {
+    "version": "8.4.191",
+    "filename": "ultralytics-8.4.191-py3-none-any.whl",
+    "sha256": "261888048192da1f86ac59a2a2768eb64f30ca16f6c04c825079dfd35495890a",
+    "url": "https://files.pythonhosted.org/packages/40/d3/efd56d1d2d6f41a9b4c7c0a496da1839f42542b1e0b9ebfeb91e440209fd/ultralytics-8.4.191-py3-none-any.whl"
+  },
+  "polars": {
+    "version": "2.1.0",
+    "filename": "polars-2.1.0-py3-none-any.whl",
+    "sha256": "63c50ce3533f5a03d17c3a2a24f1d0e0c7eda98fbde4268a3cba900d34060e67",
+    "url": "https://files.pythonhosted.org/packages/d5/d4/e696a46c74ec8cac6434764deaf72f7edcc2e91c2145a9b3f61900a7aa7a/polars-2.1.0-py3-none-any.whl"
+  },
+  "nvidia-ml-py": {
+    "version": "13.615.71",
+    "filename": "nvidia_ml_py-13.615.71-py3-none-any.whl",
+    "sha256": "959bf4adf6fe1308e4bd739e722236b0d1ec8392e2cefad33ff70c311380b9b6",
+    "url": "https://files.pythonhosted.org/packages/53/a1/1681dfa1c904d4e3e72e51b55a0ff012d50b766843ef832d584abe2113c6/nvidia_ml_py-13.615.71-py3-none-any.whl"
+  },
+  "ultralytics-thop": {
+    "version": "2.2.3",
+    "filename": "ultralytics_thop-2.2.3-py3-none-any.whl",
+    "sha256": "d56c860b9422b6abfd7e9d7afdd8af3b1242a854c17305bd60ad05cbc7f4b5b6",
+    "url": "https://files.pythonhosted.org/packages/0e/9f/5246244e2674210549e8b6247bf28a6b586878c2e744d2c82b4d4f872bf7/ultralytics_thop-2.2.3-py3-none-any.whl"
+  },
+  "ultralytics-platform": {
+    "version": "0.1.100",
+    "filename": "ultralytics_platform-0.1.100-py3-none-any.whl",
+    "sha256": "c0d5d3c06095e321aeca53be35ddf892ab52729eeb285059b6385597d5578b0b",
+    "url": "https://files.pythonhosted.org/packages/e0/b1/db2a3967db1c59f2927a3c3130bb4a10b275aca9ca534bc440e810a54ab3/ultralytics_platform-0.1.100-py3-none-any.whl"
+  },
+  "httpx": {
+    "version": "0.28.1",
+    "filename": "httpx-0.28.1-py3-none-any.whl",
+    "sha256": "d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad",
+    "url": "https://files.pythonhosted.org/packages/2a/39/e50c7c3a983047577ee07d2a9e53faf5a69493943ec3f6a384bdc792deb2/httpx-0.28.1-py3-none-any.whl"
+  },
+  "httpcore": {
+    "version": "1.0.9",
+    "filename": "httpcore-1.0.9-py3-none-any.whl",
+    "sha256": "2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55",
+    "url": "https://files.pythonhosted.org/packages/7e/f5/f66802a942d491edb555dd61e3a9961140fd64c90bce1eafd741609d334d/httpcore-1.0.9-py3-none-any.whl"
+  },
+  "anyio": {
+    "version": "4.15.1",
+    "filename": "anyio-4.15.1-py3-none-any.whl",
+    "sha256": "6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101",
+    "url": "https://files.pythonhosted.org/packages/12/b8/4bd346e22b28902df4d651910f5242c28d84e4a5c2435ca5c3f797ed7e2e/anyio-4.15.1-py3-none-any.whl"
+  },
+  "h11": {
+    "version": "0.16.0",
+    "filename": "h11-0.16.0-py3-none-any.whl",
+    "sha256": "63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86",
+    "url": "https://files.pythonhosted.org/packages/04/4b/29cac41a4d98d144bf5f6d33995617b185d14b22401f75ca86f384e87ff1/h11-0.16.0-py3-none-any.whl"
+  },
+  "typing-extensions": {
+    "version": "4.16.0",
+    "filename": "typing_extensions-4.16.0-py3-none-any.whl",
+    "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+    "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl"
+  },
+  "tzdata": {
+    "version": "2026.5",
+    "filename": "tzdata-2026.5-py2.py3-none-any.whl",
+    "sha256": "b683bd1b6659ddcd810ff02ad09ba821d4bf1065072805063eb35c49617905ac",
+    "url": "https://files.pythonhosted.org/packages/94/21/1e5995a1c920cce14e4bffae20c665ec10e7ed03ab25e006cd741092b718/tzdata-2026.5-py2.py3-none-any.whl"
+  }
+}
